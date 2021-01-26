@@ -1,13 +1,34 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {fromEvent, Observable, Subscription} from "rxjs";
 import {debounceTime} from "rxjs/operators";
+import {animate, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [
+    trigger('eliPic1', [
+      transition(':enter', [
+        style({ transform: 'translateX(-100%)'}),
+        animate('1200ms ease-in', style({transform: 'translateX(0%)'}))
+      ])
+    ]),
+    trigger('oval1', [
+      transition(':enter', [
+        style({ transform: 'translateY(-100vh)'}),
+        animate('1200ms ease-in', style({transform: 'translateY(0%)'}))
+      ])
+    ]),
+    trigger('description', [
+      transition(':enter', [
+        style({ transform: 'translateX(100vh)'}),
+        animate('1200ms ease-in', style({transform: 'translateX(0%)'}))
+      ])
+    ])
+  ]
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
   pages = [
     {name: 'home', url: 'home'},
     {name: 'about', url: 'about'},
@@ -16,6 +37,7 @@ export class AppComponent implements OnInit {
   ];
   isSmallScreen = false;
   showMobileMenu = false;
+  isStartTransition = false;
   resizeObs: Observable<Event>;
   resizeeSub: Subscription;
   constructor() {
@@ -27,6 +49,10 @@ export class AppComponent implements OnInit {
     this.resizeeSub = this.resizeObs.pipe(debounceTime(25)).subscribe( evt => {
       this.isSmallScreen = window.innerWidth < 600 ? true : false;
     });
+  }
+  ngAfterViewInit() {
+    this.isStartTransition = true;
+
   }
   toggleMobileMenu() {
     this.showMobileMenu = !this.showMobileMenu;
