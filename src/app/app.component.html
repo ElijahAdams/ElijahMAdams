@@ -21,13 +21,14 @@
         </div>
     </div>
     <div id="eliPic1Container" class="eliPic1Container">
-      <div class="picAndCircle"  >
-        <img [@oval1] class="oval" src="../assets/png/top-blue-oval.png">
+      <div class="eliPic1Wrapper"  [@.disabled]="isAnimationDone">
+        <img *ngIf="!isSmallScreen" [@oval1] class="oval" src="../assets/png/top-blue-oval.png">
+        <img *ngIf="isSmallScreen" [@oval1Mobile]="isSmallScreen" class="oval" src="../assets/png/top-blue-oval.png">
         <img [@eliPic1] class="eliPic1" src="../assets/png/eli_1.png">
       </div>
     </div>
     <div id="homeDescriptionContainer" class="homeDescriptionContainer">
-      <div [@description] class="contentContainer">
+      <div [@description] class="descriptionWrapper">
         <h4 class="helloWorld">Hello World!</h4>
         <h1 class="description">I'm Elijah, a full stack developer.</h1>
       </div>

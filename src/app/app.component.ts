@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {fromEvent, Observable, Subscription} from "rxjs";
 import {debounceTime} from "rxjs/operators";
 import {animate, style, transition, trigger} from "@angular/animations";
@@ -20,6 +20,12 @@ import {animate, style, transition, trigger} from "@angular/animations";
         animate('1200ms ease-in', style({transform: 'translateY(0%)'}))
       ])
     ]),
+    trigger('oval1Mobile', [
+      transition(':enter', [
+        style({ transform: 'translateX(100vh)'}),
+        animate('1200ms ease-in', style({transform: 'translateX(0%)'}))
+      ])
+    ]),
     trigger('description', [
       transition(':enter', [
         style({ transform: 'translateX(100vh)'}),
@@ -37,22 +43,22 @@ export class AppComponent implements OnInit, AfterViewInit {
   ];
   isSmallScreen = false;
   showMobileMenu = false;
-  isStartTransition = false;
+  isAnimationDone = false;
   resizeObs: Observable<Event>;
   resizeeSub: Subscription;
-  constructor() {
+  constructor(private cdr: ChangeDetectorRef) {
   }
 
   ngOnInit() {
-    this.isSmallScreen = window.innerWidth < 600  ? true : false;
+    this.isSmallScreen = window.innerWidth <= 568 ? true : false;
     this.resizeObs = fromEvent(window, 'resize');
     this.resizeeSub = this.resizeObs.pipe(debounceTime(25)).subscribe( evt => {
-      this.isSmallScreen = window.innerWidth < 600 ? true : false;
+      this.isSmallScreen = window.innerWidth <= 568 ? true : false;
     });
   }
   ngAfterViewInit() {
-    this.isStartTransition = true;
-
+    this.isAnimationDone = true;
+    this.cdr.detectChanges();
   }
   toggleMobileMenu() {
     this.showMobileMenu = !this.showMobileMenu;
