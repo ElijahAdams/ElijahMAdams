@@ -21,9 +21,8 @@
         </div>
     </div>
     <div id="eliPic1Container" class="eliPic1Container">
-      <div class="eliPic1Wrapper"  [@.disabled]="isAnimationDone">
-        <img *ngIf="!isSmallScreen" [@oval1] class="oval" src="../assets/png/top-blue-oval.png">
-        <img *ngIf="isSmallScreen" [@oval1Mobile]="isSmallScreen" class="oval" src="../assets/png/top-blue-oval.png">
+      <div class="eliPic1Wrapper" >
+        <img [@oval1] class="oval" src="../assets/png/top-blue-oval.png">
         <img [@eliPic1] class="eliPic1" src="../assets/png/eli_1.png">
       </div>
     </div>

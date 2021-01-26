@@ -20,12 +20,6 @@ import {animate, style, transition, trigger} from "@angular/animations";
         animate('1200ms ease-in', style({transform: 'translateY(0%)'}))
       ])
     ]),
-    trigger('oval1Mobile', [
-      transition(':enter', [
-        style({ transform: 'translateX(100vh)'}),
-        animate('1200ms ease-in', style({transform: 'translateX(0%)'}))
-      ])
-    ]),
     trigger('description', [
       transition(':enter', [
         style({ transform: 'translateX(100vh)'}),
