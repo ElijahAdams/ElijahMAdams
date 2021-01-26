@@ -22,6 +22,7 @@
   grid-column-end: 6;
   grid-row-start: 2;
   grid-row-end: 4;
+  padding: 25px;
 }
 
 .pageIndicatorContainer{
@@ -123,9 +124,6 @@
   }
   .descriptionWrapper{
     justify-content: center;
-  }
-  .description, .helloWorld {
-    margin-left: 25px;
   }
   .oval {
     height: 50%;
