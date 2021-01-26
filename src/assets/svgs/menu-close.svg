@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="21px" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>menu-close</title>
+    <g id="portfolio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-home-menu-mobile" transform="translate(-278.000000, -19.000000)" fill="#BCCAD7" fill-rule="nonzero">
+            <g id="menu-close" transform="translate(278.000000, 19.000000)">
+                <path d="M21.9166645,11.1666665 L-1.91666676,11.1666665 C-2.51466881,11.1666665 -3,10.6813353 -3,10.0833332 C-3,9.48533119 -2.51466881,9 -1.91666676,9 L21.9166645,9 C22.5146666,9 23,9.48533119 23,10.0833332 C23,10.6813353 22.5146666,11.1666665 21.9166645,11.1666665 Z" id="Path" transform="translate(9.999999, 10.083333) rotate(-315.000000) translate(-9.999999, -10.083333) "></path>
+                <path d="M21.9166645,11.1666665 L-1.91666676,11.1666665 C-2.51466881,11.1666665 -3,10.6813353 -3,10.0833332 C-3,9.48533119 -2.51466881,9 -1.91666676,9 L21.9166645,9 C22.5146666,9 23,9.48533119 23,10.0833332 C23,10.6813353 22.5146666,11.1666665 21.9166645,11.1666665 Z" id="Path" transform="translate(9.999999, 10.083333) rotate(-45.000000) translate(-9.999999, -10.083333) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

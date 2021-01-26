@@ -1,6 +1,21 @@
-<div class="homepage">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+<div id="headerContainer" class="headerContainer">
+  <div *ngIf="!isSmallScreen">
+    <a *ngFor="let page of pages" class="menuItem">{{page.name}}</a>
+  </div>
+  <div *ngIf="isSmallScreen && !showMobileMenu">
+    <button class="mobileMenuButton" (click)="toggleMobileMenu()">
+      <img class="mobileMenuIcon"  src="../assets/svgs/menu_light_blue.svg">
+    </button>
+  </div>
+</div>
+<div *ngIf="showMobileMenu" class="mobileMenu">
+  <div class="mobileMenuCloseContainer">
+    <button class="mobileMenuButton" (click)="toggleMobileMenu()">
+      <img class="mobileMenuIcon" src="../assets/svgs/menu-close.svg">
+    </button>
+  </div>
+    <div class="mobileMenuItemContainer" *ngFor="let page of pages">
+      <a class="menuItem">{{page.name}}</a>
+    </div>
 </div>
 <router-outlet></router-outlet>

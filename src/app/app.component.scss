@@ -1,5 +1,38 @@
-.homepage {
-  text-align:center;
-  background-color: black;
-  color: white;
+.headerContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+}
+.menuItem {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 500;
+  font-size: 18px;
+  color: #BCCAD7;
+  margin: 0 30px;
+}
+.menuItem:hover {
+  color:#1A1B4B
+}
+.mobileMenuCloseContainer{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 17.5px;
+  margin-bottom: 50px;
+}
+.mobileMenuButton {
+  background: transparent;
+  border: none;
+  height: 40px;
+}
+.mobileMenuIcon {
+  height: 40px;
+  margin: 0 20px;
+}
+.mobileMenuItemContainer {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
 }
