@@ -58,8 +58,4 @@ export class AppComponent implements OnInit, AfterViewInit {
   toggleMobileMenu() {
     this.showMobileMenu = !this.showMobileMenu;
   }
-
-  send() {
-    this.emailService.sendEmail();
-  }
 }

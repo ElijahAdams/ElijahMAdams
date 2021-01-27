@@ -1,0 +1,85 @@
+.contactPageContainer {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+}
+.contactFormContainer {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  padding: 25px;
+}
+.eliPic2Container {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+.pageIndicatorContainer {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-color: red;
+}
+
+.mediaContainer {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-color: yellow;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.formIntent {
+  margin: 25px 0;
+  color: #97B7D5;
+}
+.inputLabel {
+  margin: 5px 0 5px 0;
+}
+.singleInput {
+  width: 400px;
+  height: 40px;
+  border: #97B7D5 solid 1px;
+}
+.singleTxtArea {
+  width: 400px;
+  height: 125px;
+  resize: none;
+  border: #97B7D5 solid 1px;
+}
+.errorWrapper {
+  height: 25px;
+}
+.sendButton {
+  margin-top: 30px;
+  height: 50px;
+  width: 90px;
+  padding: 0 20px;
+  background-color: #1A1B4B;
+  color: #FFF;
+  border: none;
+}
+.sendButton:disabled {
+  background-color: #1A1B4B;
+  opacity: 0.5;
+}
+.oval2 {
+  height: 65%;
+  position: absolute;
+  bottom: 40px;
+  left: -20px;
+  z-index: -1;
+}
+.eliPic2 {
+  height: 100%;
+}
+
+

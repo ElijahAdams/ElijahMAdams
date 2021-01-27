@@ -1,0 +1,35 @@
+<div class="page contactPageContainer">
+  <div class="contactFormContainer">
+    <form class="form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <h2 class="formIntent">contact me</h2>
+      <label for="name" class="inputLabel">Name</label>
+      <input id="name" class="singleInput" type="text" formControlName="name" required >
+      <div class="errorWrapper">
+        <span *ngIf="contactForm.controls.name.touched && contactForm.controls.name.errors?.required">Name Required</span>
+      </div>
+
+      <label for="email" class="inputLabel">Email</label>
+      <input id="email" class="singleInput" type="email" formControlName="email" required >
+      <div class="errorWrapper">
+        <span *ngIf="contactForm.controls.email.touched && contactForm.controls.email.errors?.required">Email Required</span>
+        <span *ngIf="contactForm.controls.email.touched && contactForm.controls.email.errors?.email">Enter Valid Email</span>
+      </div>
+
+      <label for="message" class="inputLabel">Message</label>
+      <textarea id="message"  class="singleTxtArea" type="text" formControlName="message" required ></textarea>
+      <div class="errorWrapper">
+        <span *ngIf="contactForm.controls.message.touched && contactForm.controls.message.errors?.required">Message required</span>
+      </div>
+
+      <button class="sendButton" type="submit" [disabled]="!contactForm.valid">Send</button>
+    </form>
+  </div>
+  <div class="eliPic2Container">
+    <div class="eliPicWrapper">
+      <img class="oval2" src="../../assets/png/bottom-blue-oval.png">
+      <img class="eliPic2" src="../../assets/png/eli_2.png">
+    </div>
+  </div>
+  <div class="pageIndicatorContainer"></div>
+  <div class="mediaContainer"></div>
+</div>

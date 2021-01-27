@@ -2,7 +2,6 @@
   <div class="page homePageContainer">
     <div id="headerContainer" class="headerContainer">
       <div *ngIf="!isSmallScreen">
-        <button (click)="send()">send</button>
         <a *ngFor="let page of pages" class="menuItem">{{page.name}}</a>
       </div>
       <div *ngIf="isSmallScreen && !showMobileMenu">
@@ -22,7 +21,7 @@
         </div>
     </div>
     <div id="eliPic1Container" class="eliPic1Container">
-      <div class="eliPic1Wrapper" >
+      <div class="eliPicWrapper" >
         <img [@oval1] class="oval" src="../assets/png/top-blue-oval.png">
         <img [@eliPic1] class="eliPic1" src="../assets/png/eli_1.png">
       </div>
@@ -40,5 +39,7 @@
   <!-- page 3 -->
   <div class="page" style="background-color: blue">p2</div>
   <!-- page 4 -->
-  <div class="page" style="background-color: green">p3</div>
+  <div class="page">
+    <app-contact></app-contact>
+  </div>
 </div>
