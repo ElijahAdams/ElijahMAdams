@@ -11,6 +11,7 @@ export class ContactComponent implements OnInit {
 
   constructor(private emailService: EmailService) { }
   contactForm;
+  isSending = false;
   ngOnInit() {
     this.contactForm = new FormGroup({
       name: new FormControl('', Validators.required),
@@ -27,6 +28,14 @@ export class ContactComponent implements OnInit {
       email: this.contactForm.controls.email.value,
       message: this.contactForm.controls.message.value
     };
-    this.emailService.sendEmail(emailInfo);
+    this.isSending = true;
+    this.emailService.sendEmail(emailInfo).subscribe(data => {
+      console.log('email sent');
+      this.isSending = false;
+      this.contactForm.reset();
+    }, err => {
+      console.log('something went wrong');
+      this.isSending = false;
+    });
   }
 }

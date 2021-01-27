@@ -21,7 +21,10 @@
         <span *ngIf="contactForm.controls.message.touched && contactForm.controls.message.errors?.required">Message required</span>
       </div>
 
-      <button class="sendButton" type="submit" [disabled]="!contactForm.valid">Send</button>
+      <button class="sendButton" type="submit" [disabled]="!contactForm.valid">
+        <span *ngIf="!isSending">Send</span>
+        <span *ngIf="isSending" class="loadingIndicator"><div></div><div></div><div></div></span>
+      </button>
     </form>
   </div>
   <div class="eliPic2Container">

@@ -9,10 +9,6 @@ export class EmailService {
   constructor(private http: HttpClient) { }
 
   sendEmail(emailInfo) {
-    this.http.post('http://127.0.0.1:3000/sendEmail', emailInfo).subscribe(data => {
-      console.log('email sent')
-    }, err => {
-      console.log('something went wrong');
-    })
+    return this.http.post('http://127.0.0.1:3000/sendEmail', emailInfo);
   }
 }
