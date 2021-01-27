@@ -129,6 +129,7 @@ input, textarea {
   }
   .appContainer {
     height: 100%;
+    overflow-x: hidden;
   }
   .page {
     height: auto;
