@@ -45,10 +45,10 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-    this.isSmallScreen = window.innerWidth <= 568 ? true : false;
+    this.isSmallScreen = window.innerWidth <= 768 ? true : false;
     this.resizeObs = fromEvent(window, 'resize');
     this.resizeeSub = this.resizeObs.pipe(debounceTime(25)).subscribe( evt => {
-      this.isSmallScreen = window.innerWidth <= 568 ? true : false;
+      this.isSmallScreen = window.innerWidth <= 768 ? true : false;
     });
   }
   ngAfterViewInit() {

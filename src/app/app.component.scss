@@ -97,35 +97,22 @@
   color: #97B7D5;
 }
 
-@media(max-width: 568px) {
+@media(max-width: 768px) {
   .homePageContainer {
-    display: grid;
-    grid-template-rows: 80px repeat(3, 1fr);
-    grid-template-columns: repeat(5, 1fr);
+
   }
 
   .homeDescriptionContainer {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 3;
+
   }
   .eliPic1Container {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 3;
-    grid-row-end: 5;
+
   }
   .pageIndicatorContainer{
-    grid-column-start: 6;
-    grid-column-end: 6;
-    grid-row-start: 6;
-    grid-row-end: 6;
+
   }
   .descriptionWrapper{
     justify-content: center;
   }
-  .oval {
-    height: 45%;
-  }
+  .oval {}
 }
