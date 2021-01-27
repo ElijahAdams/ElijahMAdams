@@ -11,8 +11,9 @@ medium: 500
 semi-b: 600
 bold: 700
  */
-body {
+body,html {
   margin: 0;
+  height: 100%;
 }
 h1 {
   font-family: 'Poppins', sans-serif;

@@ -4,7 +4,7 @@
       <div *ngIf="!isSmallScreen">
         <a *ngFor="let page of pages" class="menuItem">{{page.name}}</a>
       </div>
-      <div *ngIf="isSmallScreen && !showMobileMenu">
+      <div class="mobileMenuButtonWrapper" *ngIf="isSmallScreen && !showMobileMenu">
         <button class="mobileMenuButton" (click)="toggleMobileMenu()">
           <img class="mobileMenuIcon"  src="../assets/svgs/menu_light_blue.svg">
         </button>
