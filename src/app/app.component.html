@@ -2,6 +2,7 @@
   <div class="page homePageContainer">
     <div id="headerContainer" class="headerContainer">
       <div *ngIf="!isSmallScreen">
+        <button (click)="send()">send</button>
         <a *ngFor="let page of pages" class="menuItem">{{page.name}}</a>
       </div>
       <div *ngIf="isSmallScreen && !showMobileMenu">

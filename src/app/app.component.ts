@@ -2,6 +2,7 @@ import {AfterViewInit, ChangeDetectorRef, Component, OnInit} from '@angular/core
 import {fromEvent, Observable, Subscription} from "rxjs";
 import {debounceTime} from "rxjs/operators";
 import {animate, style, transition, trigger} from "@angular/animations";
+import {EmailService} from "./email/email.service";
 
 @Component({
   selector: 'app-root',
@@ -40,7 +41,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   isAnimationDone = false;
   resizeObs: Observable<Event>;
   resizeeSub: Subscription;
-  constructor(private cdr: ChangeDetectorRef) {
+  constructor(private cdr: ChangeDetectorRef, private emailService: EmailService) {
   }
 
   ngOnInit() {
@@ -56,5 +57,9 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
   toggleMobileMenu() {
     this.showMobileMenu = !this.showMobileMenu;
+  }
+
+  send() {
+    this.emailService.sendEmail();
   }
 }
