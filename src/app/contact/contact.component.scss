@@ -88,6 +88,14 @@
   height: 20px;
   margin: 0 10px 0 0;
 }
+.copyRightIcon {
+  height: 10px;
+  margin: 0 5px 0 0;
+}
+.name {
+  color: #97B7D5;
+  font-size: 12px;
+}
 .mediaWrapper {
   height: 100%;
   display: flex;
@@ -99,14 +107,15 @@
   border-top: 1px #97B7D5 solid;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 40px;
 }
 @media(max-width: 1280px) {
   .eliPic2 {
-    height: 80%;
+    height: 75%;
   }
   .oval2 {
-    height: 55%;
+    height: 50%;
   }
 }
 
@@ -116,17 +125,23 @@
     flex-direction: column;
   }
   .contactFormContainer {
-
+    padding: 0 5%;
   }
   .eliPic2Container {
     width: 100%;
   }
   .pageIndicatorContainer {
-
+    display: none;
   }
 
   .mediaContainer {
 
+  }
+  .mediaWrapper {
+    padding: 0;
+  }
+  .iconWrapper {
+    padding: 0 25px;
   }
   .eliPicWrapper {
     width: 100%;
@@ -146,5 +161,8 @@
   }
   .sendButton {
     width: 100%;
+  }
+  .connectIcon{
+
   }
 }

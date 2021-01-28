@@ -39,7 +39,7 @@
   margin: 25px 0 0 0;
 }
 .buttonWrapper {
-  padding: 0 10%;
+  padding: 0 15%;
   display: flex;
   justify-content: flex-end;
 }
@@ -59,4 +59,32 @@
   background-color: #1A1B4B ;
   color: #FFF;
   border: none;
+}
+
+@media(max-width: 768px) {
+  .aboutPageContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .topContainer{
+    height: 30px;
+  }
+  .pageIndicatorContainer {
+    display: none;
+  }
+  .contentWrapper {
+    padding: 0 5%;
+  }
+  .buttonWrapper {
+    padding: 0 5%;
+    flex-direction: column;
+  }
+  .resumeBtn {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .gitHubBtn {
+    width: 100%;
+    margin-top: 30px;
+  }
 }
