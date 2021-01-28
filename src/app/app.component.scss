@@ -30,7 +30,6 @@
   grid-column-end: 6;
   grid-row-start: 4;
   grid-row-end: 5;
-  background-color: orange;
 }
 .menuItem {
   font-family: 'Inconsolata', monospace;
@@ -38,6 +37,9 @@
   font-size: 18px;
   color: #BCCAD7;
   margin: 0 30px;
+}
+.menuItem:nth-child(4) {
+  margin: 0 60px 0 30px;
 }
 .menuItem:hover {
   color:#1A1B4B
@@ -102,6 +104,7 @@
 .helloWorld {
   color: #97B7D5;
 }
+
 
 @media(max-width: 768px) {
   .homePageContainer {

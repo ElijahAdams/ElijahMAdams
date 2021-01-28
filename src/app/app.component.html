@@ -32,13 +32,24 @@
         <img [@eliPic1] class="eliPic1" src="../assets/png/eli_1.png">
       </div>
     </div>
-    <div id="pageIndicatorContainer" class="pageIndicatorContainer"></div>
+    <div id="pageIndicatorContainer" class="pageIndicatorContainer">
+      <div class="pageIndicatorWrapper">
+        <div class="dotWrapper">
+          <div *ngFor="let num of [].constructor(4); let i = index">
+            <p *ngIf="i === 0" class="pageNumber"> 0 {{i+1}} </p>
+            <p *ngIf="i !== 0" class="dot"></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <!-- page 2 -->
-  <div class="page" style="background-color: red">p1</div>
-  <!-- page 3 -->
+
+  <div class="page">
+    <app-about></app-about>
+  </div>
+
   <div class="page" style="background-color: blue">p2</div>
-  <!-- page 4 -->
+
   <div class="page">
     <app-contact></app-contact>
   </div>

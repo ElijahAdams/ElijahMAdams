@@ -7,10 +7,12 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { HttpClientModule } from "@angular/common/http";
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AboutComponent } from './about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,32 @@
+<div class="page aboutPageContainer">
+  <div class="topContainer"></div>
+  <div class="contentContainer">
+    <div class="contentWrapper">
+      <h2 class="aboutMeTitle">about me</h2>
+      <p class="aboutMeContent">
+        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue.
+        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis
+        ornare vel eu leo.
+      </p>
+      <p class="aboutMeContent">
+        Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis
+        parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac
+        cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      </p>
+    </div>
+    <div class="buttonWrapper">
+      <button class="gitHubBtn">View GitHub</button>
+      <button class="resumeBtn">View Resume</button>
+    </div>
+  </div>
+  <div class="pageIndicatorContainer">
+    <div class="pageIndicatorWrapper">
+      <div class="dotWrapper">
+        <div *ngFor="let num of [].constructor(4); let i = index">
+          <p *ngIf="i === 1" class="pageNumber"> 0 {{i+1}} </p>
+          <p *ngIf="i !== 1" class="dot"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

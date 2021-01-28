@@ -33,6 +33,22 @@
       <img class="eliPic2" src="../../assets/png/eli_2.png">
     </div>
   </div>
-  <div class="pageIndicatorContainer"></div>
-  <div class="mediaContainer"></div>
+  <div class="pageIndicatorContainer">
+    <div class="pageIndicatorWrapper">
+      <div class="dotWrapper">
+        <div *ngFor="let num of [].constructor(4); let i = index">
+          <p *ngIf="i === 3" class="pageNumber"> 0 {{i+1}} </p>
+          <p *ngIf="i !== 3" class="dot"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mediaContainer">
+    <div class="mediaWrapper">
+      <div class="iconWrapper">
+        <img class="connectIcon" src="../../assets/svgs/github.svg">
+        <img class="connectIcon" src="../../assets/svgs/linkedin.svg">
+      </div>
+    </div>
+  </div>
 </div>
