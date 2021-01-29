@@ -14,11 +14,15 @@ export class WorkComponent implements OnInit {
   }
 
   hover(example) {
-    console.log(example.name)
     example.showText = true;
   }
+
   hoverComplete(example) {
     example.showText = false;
+  }
+
+  openUpProjectView(example) {
+    console.log(example.name)
   }
 
 }

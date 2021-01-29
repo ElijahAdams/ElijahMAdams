@@ -10,13 +10,12 @@
             <p class="cardTitle" [ngClass]="example.showText ? 'hide' :'show'">
               {{example.name}}
             </p>
-
             <div class="descriptionContainer" [ngClass]="example.showText ? 'show' :'hide'">
               <p class="cardTitle2">{{example.name}}</p>
               <p class="cardDescription">{{example.description}}</p>
-              <button class="viewMoreBtn">VIEW MORE</button>
+              <div class="viewMoreWrapper">
+                <button class="viewMoreBtn" (click)="openUpProjectView(example)">VIEW MORE</button></div>
             </div>
-
             <div [ngClass]="example.showText ? 'hide' :'show'"
                  class="cornerTriangle">
             </div>
