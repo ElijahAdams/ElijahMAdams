@@ -42,6 +42,7 @@
   padding: 0 15%;
   display: flex;
   justify-content: flex-end;
+  margin-top: 30px;
 }
 
 .gitHubBtn {
@@ -79,12 +80,12 @@
     padding: 0 5%;
     flex-direction: column;
   }
+  .gitHubBtn {
+    width: 100%;
+  }
   .resumeBtn {
     width: 100%;
     margin-top: 30px;
   }
-  .gitHubBtn {
-    width: 100%;
-    margin-top: 30px;
-  }
+
 }

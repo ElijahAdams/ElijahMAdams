@@ -8,11 +8,13 @@ import { HttpClientModule } from "@angular/common/http";
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
+import { WorkComponent } from './work/work.component';
 @NgModule({
   declarations: [
     AppComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,
