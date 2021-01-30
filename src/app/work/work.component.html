@@ -22,9 +22,8 @@
         </div>
     </div>
       <div class="workExampleMobileScreen" *ngIf="isSmallScreen">
-        <div class="mobileCardContainer">
-          <div  id="mobileExampleCard{{i}}" class="exampleCard" *ngFor="let example of examples; let i = index"
-                (mouseover)="discoverShowing()">
+        <div  id="mobileCardContainer" class="mobileCardContainer" (appScrollTracker)="discoverShowing($event)">
+          <div  id="mobileExampleCard{{i}}" class="exampleCard" *ngFor="let example of examples; let i = index">
             <div class="descriptionContainer">
               <p  class="cardTitle2">{{example.name}}</p>
               <p  class="cardDescription">{{example.description}}</p>
@@ -35,7 +34,7 @@
         </div>
         <div class="workDotContainer">
           <div class="workDotWrapper" *ngFor="let example of examples; let i = index">
-            <div class="dot" [ngClass]="{'darkBlue': i === selected}"></div>
+            <div class="dot" [ngClass]="{'darkBlue': i === selected}" (click)="scrollToCard(i)"></div>
           </div>
         </div>
       </div>

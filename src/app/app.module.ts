@@ -9,12 +9,15 @@ import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
+import { ScrollTrackerDirective } from './scroll-tracker/scroll-tracker.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
     ContactComponent,
     AboutComponent,
-    WorkComponent
+    WorkComponent,
+    ScrollTrackerDirective
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,7 @@ import { WorkComponent } from './work/work.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [Window],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

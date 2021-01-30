@@ -34,11 +34,17 @@ export class WorkComponent implements OnInit, AfterViewInit {
   hoverComplete(example) {
     example.showText = false;
   }
-  discoverShowing(){
+  discoverShowing(event) {
     for (let i = 0; i < this.examples.length; i++) {
-      const ele = document.getElementById(`mobileExampleCard${i}`).getBoundingClientRect();
-      console.log(ele);
+      const ele: any = document.getElementById(`mobileExampleCard${i}`).getBoundingClientRect();
+      if (ele.x > 0 && ele.x < screen.width) {
+        this.selected = i;
+        break;
+      }
     }
+  }
+  scrollToCard(i) {
+    document.getElementById(`mobileExampleCard${i}`).scrollIntoView({behavior: 'smooth'})
   }
 
   openUpProjectView(example) {
