@@ -75,14 +75,14 @@
   opacity: 0.5;
 }
 .oval2 {
-  height: 65%;
+  height: 70%;
   position: absolute;
-  bottom: 40px;
+  top: 100px;
   left: -20px;
   z-index: -1;
 }
 .eliPic2 {
-  height: 100%;
+  height: 80%;
 }
 .connectIcon {
   height: 20px;
@@ -115,7 +115,15 @@
     height: 75%;
   }
   .oval2 {
-    height: 50%;
+    height: 60%;
+  }
+}
+@media(max-width: 1000px) {
+  .eliPic2 {
+    height: 70%;
+  }
+  .oval2 {
+    height: 55%;
   }
 }
 
@@ -155,6 +163,7 @@
   .oval2 {
     height: auto;
     width: 100%;
+    top: 675px;
   }
   .singleInput {
     width: 100%;
