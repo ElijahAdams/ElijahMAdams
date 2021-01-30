@@ -34,7 +34,6 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .exampleCard {
   height: calc((100%/3));
   width: calc((100%/3));
@@ -53,6 +52,7 @@
   background-position: 100% 100%;
   color: white;
 }
+
 .cardTitle {
   color: #1A1B4B;
   text-align: center;
@@ -120,6 +120,18 @@
 .darkBlue {
   background-color: #1A1B4B;
 }
+.mobileCardContainer {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 80%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.mobileCardContainer::-webkit-scrollbar {
+  display: none;
+}
 @media(max-width: 768px) {
   .workPageContainer{
     display: flex;
@@ -142,6 +154,7 @@
   }
   .myWorkTitle {
     text-align: center;
+    margin-bottom: 20px;
   }
   .workExampleMobileScreen {
     display: flex;
@@ -150,11 +163,11 @@
   }
   .exampleCard {
     height: 300px;
-    width: 75%;
-    min-width: 190px;
+    width: 100%;
+    min-width: 100%;
     max-width: 400px;
     min-height: 190px;
-    margin: 15px;
+    margin: 0;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -162,6 +175,7 @@
     background-image: none;
     transition: none;
     color: white;
+    scroll-snap-align: start;
   }
 
   .exampleCard:hover{

@@ -22,12 +22,15 @@
         </div>
     </div>
       <div class="workExampleMobileScreen" *ngIf="isSmallScreen">
-        <div  class="exampleCard" *ngFor="let example of examples; let i = index">
-          <div class="descriptionContainer">
-            <p  class="cardTitle2">{{example.name}}</p>
-            <p  class="cardDescription">{{example.description}}</p>
-            <div  class="viewMoreWrapper">
-              <button class="viewMoreBtn" (click)="openUpProjectView(example)">VIEW MORE</button></div>
+        <div class="mobileCardContainer">
+          <div  id="mobileExampleCard{{i}}" class="exampleCard" *ngFor="let example of examples; let i = index"
+                (mouseover)="discoverShowing()">
+            <div class="descriptionContainer">
+              <p  class="cardTitle2">{{example.name}}</p>
+              <p  class="cardDescription">{{example.description}}</p>
+              <div  class="viewMoreWrapper">
+                <button class="viewMoreBtn" (click)="openUpProjectView(example)">VIEW MORE</button></div>
+            </div>
           </div>
         </div>
         <div class="workDotContainer">
