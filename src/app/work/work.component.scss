@@ -1,6 +1,6 @@
 .workPageContainer{
   display: grid;
-  grid-template-rows: 50px repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(5, 1fr);
 }
 .myWorkContainer{
@@ -38,7 +38,9 @@
 .exampleCard {
   height: calc((100%/3));
   width: calc((100%/3));
-  margin: 20px;
+  min-width: 190px;
+  min-height: 190px;
+  margin: 15px;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -69,11 +71,14 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .cardDescription {
   font-size: 14px;
+  line-height: var(--lineHeight);
   padding: 0 10px;
   flex-shrink: 2;
+  height: var(--allowableDescriptionHeight);
   overflow: hidden;
 }
 .viewMoreWrapper {
@@ -104,4 +109,62 @@
   display: none;
 }
 
+.workDotContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.workDotWrapper {
+  margin: 0 10px;
+}
+.darkBlue {
+  background-color: #1A1B4B;
+}
+@media(max-width: 768px) {
+  .workPageContainer{
+    display: flex;
+    justify-content: center;
+  }
+  .myWorkContainer {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pageIndicatorContainer {
+    display: none;
+  }
+  .myWorkContentWrapper {
+    padding: 0;
+    height: auto;
+    width: 100%;
+  }
+  .myWorkTitle {
+    text-align: center;
+  }
+  .workExampleMobileScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .exampleCard {
+    height: 300px;
+    width: 75%;
+    min-width: 190px;
+    max-width: 400px;
+    min-height: 190px;
+    margin: 15px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: #1A1B4B;
+    background-image: none;
+    transition: none;
+    color: white;
+  }
 
+  .exampleCard:hover{
+
+  }
+}

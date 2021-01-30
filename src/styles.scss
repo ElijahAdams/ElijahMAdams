@@ -9,6 +9,10 @@ medium: 500
 semi-b: 600
 bold: 700
  */
+:root {
+  --allowableDescriptionHeight: auto;
+  --lineHeight: 0;
+}
 body,html {
   margin: 0;
   height: 100%;
