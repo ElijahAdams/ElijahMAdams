@@ -9,10 +9,22 @@ import {
   Output
 } from '@angular/core';
 import { data } from './work_examples.js'
+import {animate, style, transition, trigger} from "@angular/animations";
 @Component({
   selector: 'app-work',
   templateUrl: './work.component.html',
-  styleUrls: ['./work.component.scss']
+  styleUrls: ['./work.component.scss'],
+  animations: [
+    trigger('modalAni', [
+      transition(':enter', [
+        style({ opacity: '0'}),
+        animate('600ms ease-in', style({ opacity: '.98'}))
+      ]),
+      transition(':leave', [
+        animate('600ms ease-in', style({opacity: '0'}))
+      ])
+    ])
+  ]
 })
 export class WorkComponent implements OnInit, AfterViewInit {
   @Input() pages;
