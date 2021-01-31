@@ -149,13 +149,14 @@
 
   }
   .mediaContainer {
-
+    width: 100%;
   }
   .mediaWrapper {
     padding: 0;
+    justify-content: center;
   }
   .iconWrapper {
-    padding: 0 25px;
+    padding: 0 7.5%;
   }
   .eliPicWrapper {
     width: 100%;
@@ -176,8 +177,7 @@
   }
   .sendButton {
     width: 100%;
+    margin-bottom: 25px;
   }
-  .connectIcon{
 
-  }
 }
