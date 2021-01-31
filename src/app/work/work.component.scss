@@ -1,3 +1,4 @@
+
 .workPageContainer{
   display: grid;
   grid-template-rows: repeat(4, 1fr);
@@ -17,10 +18,19 @@
 }
 
 .myWorkContentWrapper {
-  padding: 0 20%;
+  //padding: 0 20%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.titleWrapper {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
 .myWorkTitle {
   color: #97B7D5;
   margin: 0;
@@ -28,19 +38,19 @@
 }
 
 .workExampleWrapper {
-  width: 100%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .exampleCard {
-  height: calc((100%/3));
-  width: calc((100%/3));
-  min-width: 190px;
-  min-height: 190px;
-  margin: 15px;
+  height: calc(50% - (var(--cardMargin)*2));
+  width: calc(50% - (var(--cardMargin)*2));
+  min-width: 150px;
+  min-height: 150px;
   display: flex;
+  margin-bottom: var(--cardMargin);
   position: relative;
   flex-direction: column;
   background-size: 200% 200%;
@@ -48,6 +58,15 @@
   background-image: linear-gradient(to bottom right, #97B7D5 50%, #1A1B4B 50%);
   transition: background-position 1s, color 1s;
 }
+
+.exampleCard:nth-child(odd) {
+  margin-right: var(--cardMargin);
+}
+
+.exampleCard:nth-child(even) {
+  margin-left: var(--cardMargin);
+}
+
 .exampleCard:hover{
   background-position: 100% 100%;
   color: white;

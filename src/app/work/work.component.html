@@ -1,26 +1,28 @@
 <div class="page workPageContainer">
   <div class="myWorkContainer">
     <div class="myWorkContentWrapper">
-      <h2 class="myWorkTitle">my work</h2>
+      <div class="titleWrapper">
+        <h2 class="myWorkTitle">my work</h2>
+      </div>
       <div class="workExampleWrapper" *ngIf="!isSmallScreen">
         <div id="exampleCard{{i}}" class="exampleCard" *ngFor="let example of examples; let i = index"
-             (mouseover)="hover(example, i)"
-             (mouseout)="hoverComplete(example)"
-             [ngClass]="{'centered': !example.showText }">
-            <p class="cardTitle" [ngClass]="example.showText ? 'hide' :'show'">
-              {{example.name}}
-            </p>
-            <div class="descriptionContainer" [ngClass]="example.showText ? 'show' :'hide'">
-              <p id="title{{i}}"  class="cardTitle2">{{example.name}}</p>
-              <p  class="cardDescription">{{example.description}}</p>
-              <div id="buttonWrapper{{i}}" class="viewMoreWrapper">
-                <button class="viewMoreBtn" (click)="openUpProjectView(example)">VIEW MORE</button></div>
-            </div>
-            <div [ngClass]="example.showText ? 'hide' :'show'"
-                 class="cornerTriangle">
-            </div>
-        </div>
-    </div>
+               (mouseover)="hover(example, i)"
+               (mouseout)="hoverComplete(example)"
+               [ngClass]="{'centered': !example.showText }">
+              <p class="cardTitle" [ngClass]="example.showText ? 'hide' :'show'">
+                {{example.name}}
+              </p>
+              <div class="descriptionContainer" [ngClass]="example.showText ? 'show' :'hide'">
+                <p id="title{{i}}"  class="cardTitle2">{{example.name}}</p>
+                <p  class="cardDescription">{{example.description}}</p>
+                <div id="buttonWrapper{{i}}" class="viewMoreWrapper">
+                  <button class="viewMoreBtn" (click)="openUpProjectView(example)">VIEW MORE</button></div>
+              </div>
+              <div [ngClass]="example.showText ? 'hide' :'show'"
+                   class="cornerTriangle">
+              </div>
+          </div>
+      </div>
       <div class="workExampleMobileScreen" *ngIf="isSmallScreen">
         <div  id="mobileCardContainer" class="mobileCardContainer" (appScrollTracker)="discoverShowing($event)">
           <div  id="mobileExampleCard{{i}}" class="exampleCard" *ngFor="let example of examples; let i = index">

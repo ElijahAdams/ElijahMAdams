@@ -131,9 +131,11 @@
   .contactPageContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .contactFormContainer {
-    padding: 0 5%;
+    padding: 0;
+    width: 85%;
   }
   .eliPic2Container {
     width: 100%;
