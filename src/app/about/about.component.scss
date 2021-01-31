@@ -6,10 +6,9 @@
 
 .topContainer {
   grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-color: turquoise;
 }
 
 .contentContainer {
@@ -22,6 +21,7 @@
 }
 .contentWrapper {
   padding: 0 20%;
+  margin-top: 10px;
 }
 .pageIndicatorContainer {
   grid-column-start: 1;
@@ -29,6 +29,7 @@
   grid-row-start: 4;
   grid-row-end: 5;
 }
+
 .aboutMeTitle {
   color: #97B7D5;
   margin: 0;
@@ -68,7 +69,7 @@
     flex-direction: column;
   }
   .topContainer{
-    height: 30px;
+    height: 200px;
   }
   .pageIndicatorContainer {
     display: none;
@@ -87,5 +88,6 @@
     width: 100%;
     margin-top: 30px;
   }
+
 
 }

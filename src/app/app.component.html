@@ -30,6 +30,13 @@
       <div class="eliPicWrapper" >
         <img [@oval1] class="oval" src="../assets/png/top-blue-oval.png">
         <img [@eliPic1] class="eliPic1" src="../assets/png/eli_1.png">
+        <div class="decorationWrapper">
+          <div *ngFor="let num of [].constructor(7)">
+            <div>
+              <div *ngFor="let num of [].constructor(4);" class="smallDot"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div id="pageIndicatorContainer" class="pageIndicatorContainer">

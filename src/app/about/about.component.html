@@ -1,5 +1,14 @@
 <div class="page aboutPageContainer">
-  <div class="topContainer"></div>
+  <div class="topContainer">
+    <div class="decorationWrapper">
+      <div *ngFor="let num of [].constructor(7)">
+        <div>
+          <div *ngFor="let num of [].constructor(10);" class="smallDot"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
   <div class="contentContainer">
     <div class="contentWrapper">
       <h2 class="aboutMeTitle">about me</h2>
