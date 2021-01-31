@@ -1,6 +1,8 @@
 .modalContainer {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .closeRow {
   display: flex;
@@ -22,15 +24,19 @@
 .exampleContent{
   display: flex;
   width: 100%;
+  height: 100%;
 }
 .exampleDescriptionContainer {
   width: calc(50%);
   margin-left: 20px;
 }
 .examplePictureContainer{
-  background-color: #97B7D5;
   width: calc(50%);
   margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
 
 p {
@@ -45,4 +51,26 @@ p {
 }
 .overviewWrapper{
 
+}
+
+.modalButtonWrapper {
+  bottom: 20px;
+  right: 0;
+  position: absolute;
+}
+.viewCodeBtn {
+  height: 50px;
+  padding: 0 20px;
+  background-color: #1A1B4B ;
+  color: #FFF;
+  border: solid 1px white;
+  margin-right: 30px;
+}
+
+.viewProduct {
+  height: 50px;
+  padding: 0 20px;
+  background-color: white ;
+  color: #1A1B4B;
+  border: none;
 }

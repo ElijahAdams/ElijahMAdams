@@ -1,11 +1,11 @@
-<button *ngIf="isModalOpen && currentProject > 0" class="prevButton" (click)="prevProject()">
+<button *ngIf="isModalOpen && currentProject > 0 && !isSmallScreen" class="prevButton" (click)="prevProject()">
   <img class="arrowIcon" src="../../assets/svgs/left_arrow.svg">
 </button>
 <app-work-modal [@modalAni]
                 *ngIf="isModalOpen" [examples]="examples"
                 [currentProject]="currentProject"
                 (closingModal)="closeModal()"></app-work-modal>
-<button *ngIf="isModalOpen && currentProject < examples.length" class="nextButton" (click)="nextProject()">
+<button *ngIf="isModalOpen && currentProject < examples.length && !isSmallScreen" class="nextButton" (click)="nextProject()">
   <img class="arrowIcon" src="../../assets/svgs/right_arrow.svg">
 </button>
 <div id="workPageContainer" class="page workPageContainer">
