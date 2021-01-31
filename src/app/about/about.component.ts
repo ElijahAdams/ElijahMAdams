@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
+  @Input() pages;
   constructor() { }
 
   ngOnInit() {
@@ -17,6 +17,9 @@ export class AboutComponent implements OnInit {
   }
   goToResume() {
     window.open('https://elijahmadamsresources.s3.amazonaws.com/ElijahAdams-Jan2021.pdf', '_blank');
+  }
+  goToPage(page) {
+    document.getElementById(`${page.name}PageContainer`).scrollIntoView({behavior: 'smooth'})
   }
 
 }

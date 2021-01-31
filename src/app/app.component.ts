@@ -61,6 +61,9 @@ export class AppComponent implements OnInit, AfterViewInit {
     }
     document.getElementById(`${page.name}PageContainer`).scrollIntoView({behavior: 'smooth'})
   }
+  goToPage(page) {
+    document.getElementById(`${page.name}PageContainer`).scrollIntoView({behavior: 'smooth'})
+  }
   toggleMobileMenu() {
     this.showMobileMenu = !this.showMobileMenu;
   }

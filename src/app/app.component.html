@@ -1,5 +1,5 @@
 <div class="appContainer">
-  <div class="page homePageContainer">
+  <div id="homePageContainer" class="page homePageContainer">
     <div id="headerContainer" class="headerContainer">
       <div *ngIf="!isSmallScreen">
         <a *ngFor="let page of pages" class="menuItem" (click)="scrollToSection(page)">{{page.name}}</a>
@@ -44,7 +44,7 @@
         <div class="dotWrapper">
           <div *ngFor="let num of [].constructor(4); let i = index">
             <p *ngIf="i === 0" class="pageNumber"> 0 {{i+1}} </p>
-            <p *ngIf="i !== 0" class="dot"></p>
+            <p *ngIf="i !== 0" class="dot" (click)="goToPage(pages[i])"></p>
           </div>
         </div>
       </div>
@@ -52,14 +52,14 @@
   </div>
 
   <div class="page">
-    <app-about></app-about>
+    <app-about [pages]="pages"></app-about>
   </div>
 
   <div class="page">
-    <app-work [isSmallScreen]="isSmallScreen"></app-work>
+    <app-work [pages]="pages" [isSmallScreen]="isSmallScreen"></app-work>
   </div>
 
   <div class="page">
-    <app-contact></app-contact>
+    <app-contact [pages]="pages"></app-contact>
   </div>
 </div>

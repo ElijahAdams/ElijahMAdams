@@ -38,7 +38,7 @@
       <div class="dotWrapper">
         <div *ngFor="let num of [].constructor(4); let i = index">
           <p *ngIf="i === 3" class="pageNumber"> 0 {{i+1}} </p>
-          <p *ngIf="i !== 3" class="dot"></p>
+          <p *ngIf="i !== 3" class="dot" (click)="goToPage(pages[i])"></p>
         </div>
       </div>
     </div>

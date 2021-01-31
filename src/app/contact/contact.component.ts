@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {EmailService} from "../email/email.service";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 
@@ -8,10 +8,10 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-
-  constructor(private emailService: EmailService) { }
+  @Input() pages;
   contactForm;
   isSending = false;
+  constructor(private emailService: EmailService) { }
   ngOnInit() {
     this.contactForm = new FormGroup({
       name: new FormControl('', Validators.required),
@@ -37,5 +37,8 @@ export class ContactComponent implements OnInit {
       console.log('something went wrong');
       this.isSending = false;
     });
+  }
+  goToPage(page) {
+    document.getElementById(`${page.name}PageContainer`).scrollIntoView({behavior: 'smooth'})
   }
 }

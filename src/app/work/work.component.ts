@@ -6,6 +6,7 @@ import { data } from './work_examples.js'
   styleUrls: ['./work.component.scss']
 })
 export class WorkComponent implements OnInit, AfterViewInit {
+  @Input() pages;
   @Input() isSmallScreen;
   descriptionLineHeight = 20;
   examples = data;
@@ -50,5 +51,7 @@ export class WorkComponent implements OnInit, AfterViewInit {
   openUpProjectView(example) {
     console.log(example.name)
   }
-
+  goToPage(page) {
+    document.getElementById(`${page.name}PageContainer`).scrollIntoView({behavior: 'smooth'})
+  }
 }
