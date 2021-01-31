@@ -56,7 +56,7 @@ export const data = [
     techStack: '',
     challenge: '',
     showText: false,
-    product: 'http://www.truecount21.com/home',
+    product: 'https://www.truecount21.com',
     code: 'https://github.com/ElijahAdams/truecount21'
   }
 ];
