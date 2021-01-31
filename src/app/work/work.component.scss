@@ -135,7 +135,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  width: 85%;
+  width: var(--mobileContainerWidth);
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }

@@ -135,7 +135,7 @@
   }
   .contactFormContainer {
     padding: 0;
-    width: 85%;
+    width: var(--mobileContainerWidth);
   }
   .eliPic2Container {
     width: 100%;

@@ -41,10 +41,13 @@
   margin: 25px 0 0 0;
 }
 .buttonWrapper {
-  padding: 0 15%;
   display: flex;
+  align-items: flex-end;
   justify-content: flex-end;
   margin-top: 30px;
+  width: 50%;
+  position: relative;
+  left: 10%;
 }
 
 .gitHubBtn {
@@ -76,12 +79,12 @@
     display: none;
   }
   .contentWrapper {
-    width: 85%;
+    width: var(--mobileContainerWidth);
   }
   .buttonWrapper {
     flex-direction: column;
     padding: 0;
-    width: 85%;
+    width: var(--mobileContainerWidth);
   }
   .gitHubBtn {
     width: 100%;
