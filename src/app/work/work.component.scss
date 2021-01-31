@@ -42,11 +42,11 @@
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .exampleCard {
-  height: calc(50% - (var(--cardMargin)*2));
-  width: calc(50% - (var(--cardMargin)*2));
+  height: calc(50% - (var(--cardMargin)));
+  width: calc(50% - (var(--cardMargin)));
   min-width: 150px;
   min-height: 150px;
   display: flex;
@@ -58,15 +58,6 @@
   background-image: linear-gradient(to bottom right, #97B7D5 50%, #1A1B4B 50%);
   transition: background-position 1s, color 1s;
 }
-
-.exampleCard:nth-child(odd) {
-  margin-right: var(--cardMargin);
-}
-
-.exampleCard:nth-child(even) {
-  margin-left: var(--cardMargin);
-}
-
 .exampleCard:hover{
   background-position: 100% 100%;
   color: white;
@@ -144,7 +135,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  width: 80%;
+  width: 85%;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
@@ -171,14 +162,18 @@
     height: auto;
     width: 100%;
   }
+  .titleWrapper {
+    width: 100%;
+    justify-content: center;
+  }
   .myWorkTitle {
     text-align: center;
-    margin-bottom: 20px;
   }
   .workExampleMobileScreen {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .exampleCard {
     height: 300px;
@@ -186,7 +181,7 @@
     min-width: 100%;
     max-width: 400px;
     min-height: 190px;
-    margin: 0;
+    margin: 10px;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -195,9 +190,5 @@
     transition: none;
     color: white;
     scroll-snap-align: start;
-  }
-
-  .exampleCard:hover{
-
   }
 }
