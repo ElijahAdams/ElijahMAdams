@@ -1,0 +1,48 @@
+.modalContainer {
+  height: 100%;
+  width: 100%;
+}
+.closeRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.exampleTitle {
+  margin: 0;
+  margin-left: 20px;
+}
+.closeButton{
+  height: 50px;
+  padding: 0 20px;
+  border: none;
+  color: #97B7D5;
+  background-color: transparent;
+}
+
+.exampleContent{
+  display: flex;
+  width: 100%;
+}
+.exampleDescriptionContainer {
+  width: calc(50%);
+  margin-left: 20px;
+}
+.examplePictureContainer{
+  background-color: #97B7D5;
+  width: calc(50%);
+  margin-right: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.techStackWrapper {
+  margin-bottom: 20px;
+}
+.challengeWrapper {
+  margin-bottom: 20px;
+}
+.overviewWrapper{
+
+}

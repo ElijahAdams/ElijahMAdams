@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
 import { ScrollTrackerDirective } from './scroll-tracker/scroll-tracker.directive';
+import { WorkModalComponent } from './work-modal/work-modal.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ScrollTrackerDirective } from './scroll-tracker/scroll-tracker.directiv
     ContactComponent,
     AboutComponent,
     WorkComponent,
-    ScrollTrackerDirective
+    ScrollTrackerDirective,
+    WorkModalComponent
   ],
   imports: [
     BrowserModule,

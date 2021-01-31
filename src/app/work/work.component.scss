@@ -192,3 +192,14 @@
     scroll-snap-align: start;
   }
 }
+app-work-modal {
+  position: absolute;
+  z-index: 10;
+  background-color: #1A1B4B;
+  opacity: 0.98;
+  height: 80%;
+  width: 80%;
+  top: 10%;
+  left: 10%;
+  color: white;
+}

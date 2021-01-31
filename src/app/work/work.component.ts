@@ -11,6 +11,8 @@ export class WorkComponent implements OnInit, AfterViewInit {
   descriptionLineHeight = 20;
   examples = data;
   selected = 0;
+  currentProject = 0;
+  isModalOpen = false;
   constructor(private totalBody: ElementRef) { }
 
   ngOnInit() {
@@ -48,8 +50,12 @@ export class WorkComponent implements OnInit, AfterViewInit {
     document.getElementById(`mobileExampleCard${i}`).scrollIntoView({behavior: 'smooth'})
   }
 
-  openUpProjectView(example) {
-    console.log(example.name)
+  openUpProjectView(i) {
+    this.currentProject = i;
+    this.isModalOpen = true;
+  }
+  closeModal() {
+    this.isModalOpen = false;
   }
   goToPage(page) {
     document.getElementById(`${page.name}PageContainer`).scrollIntoView({behavior: 'smooth'})

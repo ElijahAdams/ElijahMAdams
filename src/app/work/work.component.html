@@ -1,3 +1,6 @@
+<app-work-modal *ngIf="isModalOpen" [examples]="examples"
+                [currentProject]="currentProject"
+                (closingModal)="closeModal()"></app-work-modal>
 <div id="workPageContainer" class="page workPageContainer">
   <div class="myWorkContainer">
     <div class="myWorkContentWrapper">
@@ -16,7 +19,7 @@
                 <p id="title{{i}}"  class="cardTitle2">{{example.name}}</p>
                 <p  class="cardDescription">{{example.description}}</p>
                 <div id="buttonWrapper{{i}}" class="viewMoreWrapper">
-                  <button class="viewMoreBtn" (click)="openUpProjectView(example)">VIEW MORE</button></div>
+                  <button class="viewMoreBtn" (click)="openUpProjectView(i)">VIEW MORE</button></div>
               </div>
               <div [ngClass]="example.showText ? 'hide' :'show'"
                    class="cornerTriangle">
@@ -53,3 +56,4 @@
     </div>
   </div>
 </div>
+

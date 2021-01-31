@@ -1,0 +1,23 @@
+<div class="modalContainer">
+  <div class="closeRow">
+    <h3 class="exampleTitle">{{examples[currentProject].name}}</h3>
+    <button class="closeButton" (click)="closeModal()">CLOSE</button>
+  </div>
+  <div class="exampleContent">
+    <div class="exampleDescriptionContainer">
+      <div class="techStackWrapper">
+        <h5>Tech Stack</h5>
+        <p>{{examples[currentProject].techStack}}</p>
+      </div>
+      <div class="challengeWrapper">
+        <h5>Challenge</h5>
+        <p>{{examples[currentProject].challenge}}</p>
+      </div>
+      <div class="overviewWrapper">
+        <h5>Overview</h5>
+        <p>{{examples[currentProject].description}}</p>
+      </div>
+    </div>
+    <div class="examplePictureContainer"></div>
+  </div>
+</div>

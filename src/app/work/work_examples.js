@@ -4,6 +4,8 @@ export const data = [
     description: 'Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare ' +
       'vel eu leo. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue ' +
       'laoreet rutrum.',
+    techStack: 'TypeScript',
+    challenge: 'The challange was this..',
     showText: false
   },
   {
@@ -11,6 +13,8 @@ export const data = [
     description: 'Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare ' +
       'vel eu leo. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue ' +
       'laoreet rutrum.',
+    techStack: '',
+    challenge: '',
     showText: false
   },
   {
@@ -18,6 +22,8 @@ export const data = [
     description: 'Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare ' +
       'vel eu leo. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue ' +
       'laoreet rutrum.',
+    techStack: '',
+    challenge: '',
     showText: false
   },
   {
@@ -25,6 +31,8 @@ export const data = [
     description: 'Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare ' +
       'vel eu leo. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue ' +
       'laoreet rutrum.',
+    techStack: '',
+    challenge: '',
     showText: false
   }
 ];
