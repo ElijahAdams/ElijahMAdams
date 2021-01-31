@@ -1,6 +1,8 @@
+<button *ngIf="isModalOpen && currentProject > 0" class="prevButton" (click)="prevProject()">prev</button>
 <app-work-modal *ngIf="isModalOpen" [examples]="examples"
                 [currentProject]="currentProject"
                 (closingModal)="closeModal()"></app-work-modal>
+<button *ngIf="isModalOpen && currentProject < examples.length" class="nextButton" (click)="nextProject()">next</button>
 <div id="workPageContainer" class="page workPageContainer">
   <div class="myWorkContainer">
     <div class="myWorkContentWrapper">

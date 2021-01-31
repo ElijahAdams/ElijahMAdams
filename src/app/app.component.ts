@@ -39,6 +39,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   isSmallScreen = false;
   showMobileMenu = false;
   isAnimationDone = false;
+  canScroll = true;
   resizeObs: Observable<Event>;
   resizeeSub: Subscription;
   constructor(private cdr: ChangeDetectorRef, private emailService: EmailService) {
@@ -66,5 +67,8 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
   toggleMobileMenu() {
     this.showMobileMenu = !this.showMobileMenu;
+  }
+  toggleScroll(event) {
+    this.canScroll = event;
   }
 }

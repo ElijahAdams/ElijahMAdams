@@ -1,4 +1,13 @@
-import {AfterViewInit, Component, ElementRef, Input, OnInit} from '@angular/core';
+import {
+  AfterViewInit,
+  ChangeDetectorRef,
+  Component,
+  ElementRef,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output
+} from '@angular/core';
 import { data } from './work_examples.js'
 @Component({
   selector: 'app-work',
@@ -8,12 +17,13 @@ import { data } from './work_examples.js'
 export class WorkComponent implements OnInit, AfterViewInit {
   @Input() pages;
   @Input() isSmallScreen;
+  @Output() canScroll = new EventEmitter();
   descriptionLineHeight = 20;
   examples = data;
   selected = 0;
   currentProject = 0;
   isModalOpen = false;
-  constructor(private totalBody: ElementRef) { }
+  constructor(private totalBody: ElementRef, private cdr: ChangeDetectorRef) { }
 
   ngOnInit() {
   }
@@ -53,9 +63,17 @@ export class WorkComponent implements OnInit, AfterViewInit {
   openUpProjectView(i) {
     this.currentProject = i;
     this.isModalOpen = true;
+    this.canScroll.emit(false);
   }
   closeModal() {
     this.isModalOpen = false;
+    this.canScroll.emit(true);
+  }
+  prevProject() {
+    this.currentProject--;
+  }
+  nextProject() {
+    this.currentProject++;
   }
   goToPage(page) {
     document.getElementById(`${page.name}PageContainer`).scrollIntoView({behavior: 'smooth'})

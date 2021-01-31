@@ -1,4 +1,4 @@
-<div class="appContainer">
+<div class="appContainer" [ngClass]="canScroll ? 'appScroll' : 'appStay'">
   <div id="homePageContainer" class="page homePageContainer">
     <div id="headerContainer" class="headerContainer">
       <div *ngIf="!isSmallScreen">
@@ -56,7 +56,7 @@
   </div>
 
   <div class="page">
-    <app-work [pages]="pages" [isSmallScreen]="isSmallScreen"></app-work>
+    <app-work [pages]="pages" [isSmallScreen]="isSmallScreen" (canScroll)="toggleScroll($event)"></app-work>
   </div>
 
   <div class="page">

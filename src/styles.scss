@@ -19,6 +19,8 @@ bold: 700
 body,html {
   margin: 0;
   height: 100%;
+  position: fixed;
+  overflow: hidden;
 }
 h1 {
   font-family: 'Poppins', sans-serif;
@@ -96,8 +98,13 @@ input, textarea {
   width: 100%;
   height: 100vh;
   scroll-behavior: smooth;
-  overflow: scroll;
   scroll-snap-type: y mandatory;
+}
+.appScroll {
+  overflow: scroll;
+}
+.appStay {
+  overflow: hidden;
 }
 .page {
   width: 100%;
