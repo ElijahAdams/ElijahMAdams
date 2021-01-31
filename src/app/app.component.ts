@@ -55,6 +55,12 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.isAnimationDone = true;
     this.cdr.detectChanges();
   }
+  scrollToSection(page) {
+    if(this.isSmallScreen){
+      this.showMobileMenu = false;
+    }
+    document.getElementById(`${page.name}PageContainer`).scrollIntoView({behavior: 'smooth'})
+  }
   toggleMobileMenu() {
     this.showMobileMenu = !this.showMobileMenu;
   }

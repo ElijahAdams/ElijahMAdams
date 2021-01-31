@@ -21,7 +21,7 @@
   align-items: center;
 }
 .contentWrapper {
-  width: 50%;
+  width: var(--containerWidth);
   margin-top: 10px;
 }
 .pageIndicatorContainer {
@@ -45,7 +45,7 @@
   align-items: flex-end;
   justify-content: flex-end;
   margin-top: 30px;
-  width: 50%;
+  width: var(--containerWidth);
   position: relative;
   left: 10%;
 }
@@ -85,9 +85,11 @@
     flex-direction: column;
     padding: 0;
     width: var(--mobileContainerWidth);
+    left: 0;
   }
   .gitHubBtn {
     width: 100%;
+    margin-right: 0;
   }
   .resumeBtn {
     width: 100%;

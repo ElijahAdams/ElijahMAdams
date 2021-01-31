@@ -26,7 +26,7 @@
 }
 
 .titleWrapper {
-  width: 50%;
+  width: var(--containerWidth);
   display: flex;
   justify-content: flex-end;
   margin-bottom: 25px;
@@ -38,7 +38,7 @@
 }
 
 .workExampleWrapper {
-  width: 50%;
+  width: var(--containerWidth);
   height: 100%;
   display: flex;
   flex-wrap: wrap;

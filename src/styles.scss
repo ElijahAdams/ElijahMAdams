@@ -13,6 +13,7 @@ bold: 700
   --allowableDescriptionHeight: auto;
   --lineHeight: 0;
   --cardMargin: 10px;
+  --containerWidth: 50%;
   --mobileContainerWidth: 85%;
 }
 body,html {
@@ -136,6 +137,14 @@ input, textarea {
   position: absolute;
   left: 30%;
 }
+.decorationWrapper2 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: -40px;
+  bottom: -50px;
+  z-index: -1;
+}
 
 .smallDot{
   height: 5px;
@@ -188,6 +197,9 @@ input, textarea {
     justify-content: flex-end;
     left: 0px;
     right: 5%;
+  }
+  .decorationWrapper2 {
+    display: none;
   }
 }
 

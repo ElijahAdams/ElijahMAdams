@@ -1,4 +1,4 @@
-<div class="page aboutPageContainer">
+<div id="aboutPageContainer" class="page aboutPageContainer">
   <div class="topContainer">
     <div class="decorationWrapper">
       <div *ngFor="let num of [].constructor(7)">
@@ -6,7 +6,6 @@
           <div *ngFor="let num of [].constructor(10);" class="smallDot"></div>
         </div>
       </div>
-
     </div>
   </div>
   <div class="contentContainer">
@@ -26,6 +25,13 @@
     <div class="buttonWrapper">
       <button class="gitHubBtn" (click)="goToHub()">View GitHub</button>
       <button class="resumeBtn" (click)="goToResume()">View Resume</button>
+      <div class="decorationWrapper2">
+        <div *ngFor="let num of [].constructor(7)">
+          <div>
+            <div *ngFor="let num of [].constructor(7);" class="smallDot"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="pageIndicatorContainer">
