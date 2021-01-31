@@ -19,4 +19,11 @@ export class WorkModalComponent implements OnInit {
     this.closingModal.emit(true);
   }
 
+  viewCode() {
+    window.open(this.examples[this.currentProject].code, '_blank');
+  }
+  viewProduct() {
+    window.open(this.examples[this.currentProject].product, '_blank');
+  }
+
 }

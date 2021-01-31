@@ -20,10 +20,10 @@
     </div>
     <div class="examplePictureContainer">
       <div class=""> pic</div>
-      <div class="modalButtonWrapper">
-        <button class="viewCodeBtn"> VIEW CODE</button>
-        <button class="viewProduct"> VIEW PRODUCT</button>
-      </div>
     </div>
+  </div>
+  <div class="modalButtonWrapper">
+    <button *ngIf="examples[currentProject].code !== ''" class="viewCodeBtn" (click)="viewCode()"> VIEW CODE</button>
+    <button *ngIf="examples[currentProject].product !== ''" class="viewProduct" (click)="viewProduct()"> VIEW PRODUCT</button>
   </div>
 </div>

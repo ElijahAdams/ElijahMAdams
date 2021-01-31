@@ -5,7 +5,7 @@
                 *ngIf="isModalOpen" [examples]="examples"
                 [currentProject]="currentProject"
                 (closingModal)="closeModal()"></app-work-modal>
-<button *ngIf="isModalOpen && currentProject < examples.length && !isSmallScreen" class="nextButton" (click)="nextProject()">
+<button *ngIf="isModalOpen && currentProject < examples.length - 1 && !isSmallScreen" class="nextButton" (click)="nextProject()">
   <img class="arrowIcon" src="../../assets/svgs/right_arrow.svg">
 </button>
 <div id="workPageContainer" class="page workPageContainer">
@@ -40,7 +40,7 @@
               <p  class="cardTitle2">{{example.name}}</p>
               <p  class="cardDescription">{{example.description}}</p>
               <div  class="viewMoreWrapper">
-                <button class="viewMoreBtn" (click)="openUpProjectView(example)">VIEW MORE</button></div>
+                <button class="viewMoreBtn" (click)="openUpProjectView(i)">VIEW MORE</button></div>
             </div>
           </div>
         </div>

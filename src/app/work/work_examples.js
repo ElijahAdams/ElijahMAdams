@@ -3,10 +3,20 @@ export const data = [
     name: 'Retirement Readiness',
     description: 'Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare ' +
       'vel eu leo. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue ' +
+      'laoreet rutrum. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare ' +
+      'vel eu leo. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue ' +
+      'laoreet rutrum.Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare ' +
+      'vel eu leo. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue ' +
+      'laoreet rutrum.Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare ' +
+      'vel eu leo. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue ' +
+      'laoreet rutrum.Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare ' +
+      'vel eu leo. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue ' +
       'laoreet rutrum.',
     techStack: 'TypeScript',
     challenge: 'The challange was this..',
-    showText: false
+    showText: false,
+    product: '',
+    code: ''
   },
   {
     name: 'AngularJS Component Library',
@@ -15,7 +25,9 @@ export const data = [
       'laoreet rutrum.',
     techStack: '',
     challenge: '',
-    showText: false
+    showText: false,
+    product: '',
+    code: ''
   },
   {
     name: 'Acres',
@@ -24,16 +36,28 @@ export const data = [
       'laoreet rutrum.',
     techStack: '',
     challenge: '',
-    showText: false
+    showText: false,
+    product: 'https://play.google.com/store/apps/details?id=com.funktory.fortyAcres',
+    code: ''
   },
   {
     name: 'True Count 21',
     description: 'Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare ' +
       'vel eu leo. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue ' +
+      'laoreet rutrum. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare ' +
+      'vel eu leo. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue ' +
+      'laoreet rutrum.Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare ' +
+      'vel eu leo. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue ' +
+      'laoreet rutrum.Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare ' +
+      'vel eu leo. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue ' +
+      'laoreet rutrum.Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare ' +
+      'vel eu leo. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue ' +
       'laoreet rutrum.',
     techStack: '',
     challenge: '',
-    showText: false
+    showText: false,
+    product: 'http://www.truecount21.com/home',
+    code: 'https://github.com/ElijahAdams/truecount21'
   }
 ];
 

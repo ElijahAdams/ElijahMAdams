@@ -54,9 +54,9 @@ p {
 }
 
 .modalButtonWrapper {
-  bottom: 20px;
-  right: 0;
-  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 20px 20px 20px;
 }
 .viewCodeBtn {
   height: 50px;
@@ -73,4 +73,48 @@ p {
   background-color: white ;
   color: #1A1B4B;
   border: none;
+}
+@media(max-width: 768px) {
+  .modalContainer {
+    align-items: center;
+    overflow: scroll;
+  }
+  .exampleTitle {
+    margin: 0;
+  }
+  .closeRow {
+    width: 90%;
+  }
+  .exampleContent {
+    flex-direction: column;
+    width: 90%;
+  }
+  .exampleDescriptionContainer{
+    margin: 0;
+    width: 100%;
+    order: 2;
+  }
+  .examplePictureContainer {
+    width: 100%;
+    margin: 0;
+    order: 1;
+  }
+  .modalButtonWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0;
+    width: 90%;
+  }
+  .viewCodeBtn {
+    margin-right: 0;
+    margin-top: 20px;
+    width: 100%;
+    order: 2;
+  }
+
+  .viewProduct {
+    width: 100%;
+    order: 1;
+  }
 }

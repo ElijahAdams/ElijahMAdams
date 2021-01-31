@@ -142,6 +142,39 @@
 .mobileCardContainer::-webkit-scrollbar {
   display: none;
 }
+app-work-modal {
+  position: absolute;
+  z-index: 10;
+  background-color: #1A1B4B;
+  opacity: 0.98;
+  height: 80%;
+  width: 80%;
+  top: 10%;
+  left: 10%;
+  color: white;
+}
+.prevButton {
+  height: 50px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 2.5%;
+  z-index: 10;
+  border: none;
+}
+.nextButton {
+  height: 50px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  right: 2.5%;
+  z-index: 10;
+  border: none;
+}
+.arrowIcon {
+  width: 40px;
+}
+
 @media(max-width: 768px) {
   .workPageContainer{
     display: flex;
@@ -191,36 +224,12 @@
     color: white;
     scroll-snap-align: start;
   }
+  app-work-modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
 }
-app-work-modal {
-  position: absolute;
-  z-index: 10;
-  background-color: #1A1B4B;
-  opacity: 0.98;
-  height: 80%;
-  width: 80%;
-  top: 10%;
-  left: 10%;
-  color: white;
-}
-.prevButton {
-  height: 50px;
-  background-color: transparent;
-  position: absolute;
-  top: 50%;
-  left: 2.5%;
-  z-index: 10;
-  border: none;
-}
-.nextButton {
-  height: 50px;
-  background-color: transparent;
-  position: absolute;
-  top: 50%;
-  right: 2.5%;
-  z-index: 10;
-  border: none;
-}
-.arrowIcon {
-  width: 40px;
-}
+
