@@ -59,6 +59,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   scrollToSection(page) {
     if(this.isSmallScreen){
       this.showMobileMenu = false;
+      this.toggleScroll(true);
     }
     document.getElementById(`${page.name}PageContainer`).scrollIntoView({behavior: 'smooth'})
   }
@@ -67,6 +68,9 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
   toggleMobileMenu() {
     this.showMobileMenu = !this.showMobileMenu;
+    this.showMobileMenu ? this.toggleScroll(false) : this.toggleScroll(true);
+
+
   }
   toggleScroll(event) {
     this.canScroll = event;
