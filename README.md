@@ -1,4 +1,4 @@
-# ElijahMAdams
+# [ElijahMAdams](https://elijahmadams.com/)
 
 This project is my personal website and portfolio. 
 
