@@ -5,7 +5,7 @@
 }
 .contactFormContainer {
   grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 4;
   padding: 25px;
@@ -42,11 +42,14 @@
 }
 .inputLabel {
   margin: 5px 0 5px 0;
+  color: #1A1B4B;
 }
 .singleInput {
   width: 100%;
+  width: 100%;
   height: 40px;
   border: #97B7D5 solid 1px;
+  color: #1A1B4B;
 }
 .singleTxtArea {
   width: 100%;
@@ -56,6 +59,7 @@
 }
 .errorWrapper {
   height: 25px;
+  color: #1A1B4B;
 }
 .sendButton {
   margin-top: 30px;
@@ -74,15 +78,19 @@
   background-color: #1A1B4B;
   opacity: 0.5;
 }
+.posRel {
+  position: relative;
+}
 .oval2 {
-  height: 70%;
+  width: 100%;
   position: absolute;
-  top: 100px;
+  bottom: 20%;
   left: -20px;
   z-index: -1;
 }
 .eliPic2 {
-  height: 80%;
+  height: auto;
+  width: auto;
 }
 .connectIcon {
   height: 20px;
@@ -112,18 +120,12 @@
 }
 @media(max-width: 1280px) {
   .eliPic2 {
-    height: 75%;
-  }
-  .oval2 {
-    height: 60%;
+    width: 100%;
   }
 }
 @media(max-width: 1000px) {
   .eliPic2 {
-    height: 70%;
-  }
-  .oval2 {
-    height: 55%;
+    width: 100%;
   }
 }
 
@@ -165,10 +167,11 @@
   }
   .eliPic2 {
     height: 400px;
+    width: auto;
   }
   .oval2 {
     height: 300px;
-    top: inherit;
+    width: auto;
     left: inherit;
   }
   .singleInput {
