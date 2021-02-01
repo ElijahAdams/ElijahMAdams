@@ -80,14 +80,14 @@
   align-items: flex-end;
 }
 .oval {
-  height: 65%;
+  height: 60%;
   position: absolute;
   bottom: 40px;
   left: -20px;
   z-index: -1;
 }
 .eliPic1 {
-  height: 90%;
+  height: 80%;
 }
 
 .descriptionWrapper {
@@ -105,7 +105,7 @@
   color: #97B7D5;
 }
 
-@media(max-width: 768px) {
+@media screen and (max-width: 768px), screen and (max-height: 700px) {
   .homePageContainer {
     display: flex;
     flex-direction: column;

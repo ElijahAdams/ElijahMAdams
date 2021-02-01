@@ -127,7 +127,7 @@
   }
 }
 
-@media(max-width: 768px) {
+@media screen and (max-width: 768px), screen and (max-height: 700px) {
   .contactPageContainer {
     display: flex;
     flex-direction: column;
