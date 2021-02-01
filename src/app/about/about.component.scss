@@ -6,9 +6,10 @@
 
 .topContainer {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+  position: relative;
 }
 
 .contentContainer {
@@ -68,13 +69,7 @@
 }
 
 @media screen and (max-width: 768px), screen and (max-height: 700px) {
-  .aboutPageContainer {
-    display: flex;
-    flex-direction: column;
-  }
-  .topContainer{
-    height: 200px;
-  }
+
   .pageIndicatorContainer {
     display: none;
   }
@@ -95,6 +90,13 @@
     width: 100%;
     margin-top: 30px;
   }
-
-
+}
+@media screen and (max-width: 768px) {
+  .aboutPageContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .topContainer{
+    height: 200px;
+  }
 }

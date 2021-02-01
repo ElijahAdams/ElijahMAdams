@@ -116,6 +116,7 @@ input, textarea {
   width: 100%;
   display: flex;
   align-items: flex-end;
+  position: relative;
 }
 
 .pageIndicatorWrapper{
@@ -145,7 +146,7 @@ input, textarea {
   display: flex;
   flex-direction: row;
   position: absolute;
-  left: 25%;
+  right: 0;
 }
 .decorationWrapper2 {
   display: flex;
@@ -248,19 +249,18 @@ input, textarea {
     font-size: 16px;
   }
   .decorationWrapper {
-    left: 35%;
+    right: 35%;
   }
 }
 @media screen and (max-width: 698px) {
   .decorationWrapper {
-    left: 45%;
+    right: 35%;
   }
 }
 
 @media screen and (max-width: 568px) {
   .decorationWrapper {
     justify-content: flex-end;
-    left: 0px;
     right: 5%;
   }
 }

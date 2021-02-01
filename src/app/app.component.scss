@@ -73,21 +73,15 @@
   justify-content: center;
 }
 
-.eliPic1Wrapper {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-}
 .oval {
-  height: 60%;
+  width: 100%;
   position: absolute;
   bottom: 40px;
   left: -20px;
   z-index: -1;
 }
 .eliPic1 {
-  height: 80%;
+  width: 100%;
 }
 
 .descriptionWrapper {
@@ -119,9 +113,11 @@
   }
   .eliPic1 {
     height: 400px;
+    width: auto;
   }
   .oval {
     height: 400px;
+    width: auto;
     bottom: 20px;
     left: -20px;
   }
@@ -134,10 +130,4 @@
     height: auto;
   }
 }
-@media(max-width: 568px) {
-  .oval {
-    height: 60%;
-  }
-}
-
 
