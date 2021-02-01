@@ -1,27 +1,18 @@
 # ElijahMAdams
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+This project is my personal website and portfolio. 
 
-## Development server
+## Details
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The project has an Angular front-end and Node.js for the server side. 
 
-## Code scaffolding
+## Running Locally
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To run locally check out the project and run 
+1. `npm install`
+2. `ng serve` to just run the UI
+3. `npm run runall` to build and then run the UI and backend. 
+4. `npm run start` to run the UI and backend.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Demo
+The website is deployed [here](https://elijahmadams.com/) utilzing AWS Elastic beanstalk. 
