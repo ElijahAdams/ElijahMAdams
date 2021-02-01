@@ -149,7 +149,7 @@ app-work-modal {
   opacity: 0.98;
   height: 80%;
   width: 80%;
-  top: 10%;
+  top: 5%;
   left: 10%;
   color: white;
 }
@@ -175,7 +175,7 @@ app-work-modal {
   width: 40px;
 }
 
-@media screen and (max-width: 768px), screen and (max-height: 700px){
+@media screen and (max-width: 768px), screen and (max-height: 790px){
   .workPageContainer{
     display: flex;
     justify-content: center;

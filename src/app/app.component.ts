@@ -2,7 +2,6 @@ import {AfterViewInit, ChangeDetectorRef, Component, OnInit} from '@angular/core
 import {fromEvent, Observable, Subscription} from "rxjs";
 import {debounceTime} from "rxjs/operators";
 import {animate, style, transition, trigger} from "@angular/animations";
-import {EmailService} from "./email/email.service";
 
 @Component({
   selector: 'app-root',
@@ -43,15 +42,15 @@ export class AppComponent implements OnInit, AfterViewInit {
   canScroll = true;
   resizeObs: Observable<Event>;
   resizeeSub: Subscription;
-  constructor(private cdr: ChangeDetectorRef, private emailService: EmailService) {
+  constructor(private cdr: ChangeDetectorRef) {
   }
 
   ngOnInit() {
     this.isMobile = window.innerWidth <= 768 ? true : false;
-    this.isSmallScreen = window.innerWidth <= 768 || window.innerHeight <= 700 ? true : false;
+    this.isSmallScreen = window.innerWidth <= 768 || window.innerHeight <= 790 ? true : false;
     this.resizeObs = fromEvent(window, 'resize');
     this.resizeeSub = this.resizeObs.pipe(debounceTime(25)).subscribe( evt => {
-      this.isSmallScreen = window.innerWidth <= 768 || window.innerHeight <= 700  ? true : false;
+      this.isSmallScreen = window.innerWidth <= 768 || window.innerHeight <= 790  ? true : false;
       this.isMobile = window.innerWidth <= 768 ? true : false;
     });
   }

@@ -26,7 +26,7 @@
   margin-top: 10px;
 }
 .pageIndicatorContainer {
-  grid-column-start: 1;
+  grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 4;
   grid-row-end: 5;
@@ -48,7 +48,7 @@
   margin-top: 30px;
   width: var(--containerWidth);
   position: relative;
-  left: 10%;
+  left: 5%;
 }
 
 .gitHubBtn {
@@ -68,7 +68,7 @@
   border: none;
 }
 
-@media screen and (max-width: 768px), screen and (max-height: 700px) {
+@media screen and (max-width: 768px), screen and (max-height: 790px) {
 
   .pageIndicatorContainer {
     display: none;

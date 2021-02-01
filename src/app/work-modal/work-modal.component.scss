@@ -3,6 +3,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 }
 .closeRow {
   display: flex;
@@ -74,10 +75,10 @@ p {
   color: #1A1B4B;
   border: none;
 }
-@media screen and (max-width: 768px), screen and (max-height: 700px) {
+@media screen and (max-width: 768px), screen and (max-height: 790px) {
   .modalContainer {
     align-items: center;
-    overflow: scroll;
+
     height: 100vh;
   }
   .exampleTitle {
@@ -89,6 +90,7 @@ p {
   .exampleContent {
     flex-direction: column;
     width: 90%;
+    height: auto;
   }
   .exampleDescriptionContainer{
     margin: 0;
