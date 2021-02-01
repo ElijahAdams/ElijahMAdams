@@ -1,16 +1,16 @@
 <div class="appContainer" [ngClass]="canScroll ? 'appScroll' : 'appStay'">
   <div id="homePageContainer" class="page homePageContainer">
     <div id="headerContainer" class="headerContainer">
-      <div *ngIf="!isSmallScreen">
+      <div *ngIf="!isMobile">
         <a *ngFor="let page of pages" class="menuItem" (click)="scrollToSection(page)">{{page.name}}</a>
       </div>
-      <div class="mobileMenuButtonWrapper" *ngIf="isSmallScreen && !showMobileMenu">
+      <div class="mobileMenuButtonWrapper" *ngIf="isMobile && !showMobileMenu">
         <button class="mobileMenuButton" (click)="toggleMobileMenu()" >
           <img class="mobileMenuIcon"  src="../assets/svgs/menu_light_blue.svg">
         </button>
       </div>
     </div>
-    <div *ngIf="showMobileMenu && isSmallScreen" class="mobileMenu">
+    <div *ngIf="showMobileMenu && isMobile" class="mobileMenu">
       <div class="mobileMenuCloseContainer">
         <button class="mobileMenuButton" (click)="toggleMobileMenu()">
           <img class="mobileMenuIcon" src="../assets/svgs/menu-close.svg">
@@ -33,7 +33,7 @@
         <div class="decorationWrapper">
           <div *ngFor="let num of [].constructor(7)">
             <div>
-              <div *ngFor="let num of [].constructor(4);" class="smallDot"></div>
+              <div *ngFor="let num of [].constructor(3);" class="smallDot"></div>
             </div>
           </div>
         </div>

@@ -97,7 +97,7 @@ input, textarea {
   width: 100%;
   height: 100vh;
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  //scroll-snap-type: y mandatory;
 }
 .appScroll {
   overflow: scroll;
@@ -145,7 +145,7 @@ input, textarea {
   display: flex;
   flex-direction: row;
   position: absolute;
-  left: 30%;
+  left: 25%;
 }
 .decorationWrapper2 {
   display: flex;
@@ -208,6 +208,24 @@ input, textarea {
 }
 
 @media screen and (max-width: 768px), screen and (max-height: 700px) {
+
+  .appContainer {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  .page {
+    height: auto;
+    scroll-snap-align: none;
+  }
+  .decorationWrapper2 {
+    display: none;
+  }
+  .loadingIndicator{
+    width: 50%;
+  }
+
+}
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 24px;
   }
@@ -229,24 +247,20 @@ input, textarea {
   button {
     font-size: 16px;
   }
-  .appContainer {
-    height: 100%;
-    overflow-x: hidden;
+  .decorationWrapper {
+    left: 35%;
   }
-  .page {
-    height: auto;
-    scroll-snap-align: none;
+}
+@media screen and (max-width: 698px) {
+  .decorationWrapper {
+    left: 45%;
   }
+}
+
+@media screen and (max-width: 568px) {
   .decorationWrapper {
     justify-content: flex-end;
     left: 0px;
     right: 5%;
   }
-  .decorationWrapper2 {
-    display: none;
-  }
-  .loadingIndicator{
-    width: 50%;
-  }
 }
-

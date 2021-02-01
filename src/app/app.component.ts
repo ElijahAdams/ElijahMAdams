@@ -37,6 +37,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     {name: 'contact', url: 'contact'},
   ];
   isSmallScreen = false;
+  isMobile = false;
   showMobileMenu = false;
   isAnimationDone = false;
   canScroll = true;
@@ -46,10 +47,12 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
+    this.isMobile = window.innerWidth <= 768 ? true : false;
     this.isSmallScreen = window.innerWidth <= 768 || window.innerHeight <= 700 ? true : false;
     this.resizeObs = fromEvent(window, 'resize');
     this.resizeeSub = this.resizeObs.pipe(debounceTime(25)).subscribe( evt => {
       this.isSmallScreen = window.innerWidth <= 768 || window.innerHeight <= 700  ? true : false;
+      this.isMobile = window.innerWidth <= 768 ? true : false;
     });
   }
   ngAfterViewInit() {
