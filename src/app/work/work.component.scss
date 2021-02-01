@@ -143,7 +143,7 @@
   display: none;
 }
 app-work-modal {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   background-color: #1A1B4B;
   opacity: 0.98;

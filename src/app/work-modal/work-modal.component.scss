@@ -5,6 +5,11 @@
   flex-direction: column;
   overflow: scroll;
 }
+
+.modalContainer::-webkit-scrollbar {
+  display: none;
+}
+
 .closeRow {
   display: flex;
   justify-content: space-between;

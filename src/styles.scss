@@ -97,7 +97,7 @@ input, textarea {
   width: 100%;
   height: 100vh;
   scroll-behavior: smooth;
-  //scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
 }
 .appScroll {
   overflow: scroll;
