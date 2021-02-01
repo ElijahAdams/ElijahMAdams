@@ -12,7 +12,7 @@ bold: 700
 :root {
   --allowableDescriptionHeight: auto;
   --lineHeight: 0;
-  --cardMargin: 10px;
+  --cardMargin: 20px;
   --containerWidth: 60%;
   --mobileContainerWidth: 85%;
 }
@@ -208,7 +208,7 @@ input, textarea {
   }
 }
 
-@media screen and (max-width: 768px), screen and (max-height: 700px) {
+@media screen and (max-width: 768px), screen and (max-height: 750px) {
 
   .appContainer {
     height: 100%;

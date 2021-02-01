@@ -5,7 +5,7 @@
 }
 .contactFormContainer {
   grid-column-start: 3;
-  grid-column-end: 6;
+  grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 4;
   padding: 25px;
@@ -127,7 +127,7 @@
   }
 }
 
-@media screen and (max-width: 768px), screen and (max-height: 790px) {
+@media screen and (max-width: 768px), screen and (max-height: 750px) {
   .contactPageContainer {
     display: flex;
     flex-direction: column;
