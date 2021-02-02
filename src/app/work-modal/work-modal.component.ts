@@ -26,4 +26,8 @@ export class WorkModalComponent implements OnInit {
     window.open(this.examples[this.currentProject].product, '_blank');
   }
 
+  viewImages() {
+
+  }
+
 }

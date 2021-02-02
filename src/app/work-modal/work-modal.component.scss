@@ -76,15 +76,13 @@ p {
 .viewProduct {
   height: 50px;
   padding: 0 20px;
-  background-color: white ;
+  background-color: white;
   color: #1A1B4B;
   border: none;
 }
 @media screen and (max-width: 768px), screen and (max-height: 790px) {
   .modalContainer {
     align-items: center;
-
-    height: 100vh;
   }
   .exampleTitle {
     margin: 0;
@@ -124,5 +122,11 @@ p {
   .viewProduct {
     width: 100%;
     order: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modalContainer {
+    height: 100vh;
   }
 }

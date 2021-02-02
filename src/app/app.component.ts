@@ -11,19 +11,19 @@ import {animate, style, transition, trigger} from "@angular/animations";
     trigger('eliPic1', [
       transition(':enter', [
         style({ transform: 'translateX(-100%)'}),
-        animate('1200ms ease-in', style({transform: 'translateX(0%)'}))
+        animate('1000ms 1000ms', style({transform: 'translateX(0%)'}))
       ])
     ]),
     trigger('oval1', [
       transition(':enter', [
         style({ transform: 'translateY(-100vh)'}),
-        animate('1200ms ease-in', style({transform: 'translateY(0%)'}))
+        animate('1000ms ease-in', style({transform: 'translateY(0%)'}))
       ])
     ]),
     trigger('description', [
       transition(':enter', [
         style({ transform: 'translateX(100vh)'}),
-        animate('1200ms ease-in', style({transform: 'translateX(0%)'}))
+        animate('1000ms ease-in', style({transform: 'translateX(0%)'}))
       ])
     ])
   ]

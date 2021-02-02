@@ -2,13 +2,14 @@ export const data = [
   {
     name: 'Retirement Readiness',
     description: 'This tool is available to thousands of Vanguard Institutional clients. It projects a users monthly ' +
-      'income at retirement based on their savings at Vanguard, estimated Social Security,' +
+      'income at retirement based on their savings at Vanguard, estimated Social Security, ' +
       'other benefits provided by their employer to Vanguard, and additional information the user enters.',
     tech: 'TypeScript, Angular, Java, DB2',
     challenge: 'The challenge was this...',
     showText: false,
     overview: '',
     product: '',
+    images: [],
     code: ''
   },
   {
@@ -20,7 +21,8 @@ export const data = [
     challenge: 'The challenge was this...',
     showText: false,
     overview: 'Most notable the global header and footer on Vanguard\'s home page are a product of this library.',
-    product: 'https://investor.vanguard.com/home',
+    product: '',
+    images: ['vui_home', 'vui_menu_small', 'vui_slider_small', 'vui_sorttable_small'],
     code: ''
   },
   {
@@ -32,6 +34,7 @@ export const data = [
     showText: false,
     overview: '',
     product: 'https://play.google.com/store/apps/details?id=com.funktory.fortyAcres',
+    images: [],
     code: ''
   },
   {
@@ -42,6 +45,7 @@ export const data = [
     overview: '',
     showText: false,
     product: 'https://www.truecount21.com',
+    images: [],
     code: 'https://github.com/ElijahAdams/truecount21'
   }
 ];

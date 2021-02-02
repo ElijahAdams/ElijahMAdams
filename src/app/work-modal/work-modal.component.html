@@ -25,5 +25,6 @@
   <div class="modalButtonWrapper">
     <button *ngIf="examples[currentProject].code !== ''" class="viewCodeBtn" (click)="viewCode()"> VIEW CODE</button>
     <button *ngIf="examples[currentProject].product !== ''" class="viewProduct" (click)="viewProduct()"> VIEW PRODUCT</button>
+    <button *ngIf="examples[currentProject].images.length > 0" class="viewProduct" (click)="viewImages()">VIEW IMAGES</button>
   </div>
 </div>
