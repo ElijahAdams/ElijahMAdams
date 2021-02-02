@@ -1,4 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-work-modal',
@@ -9,7 +10,7 @@ export class WorkModalComponent implements OnInit {
   @Input() examples;
   @Input() currentProject;
   @Output() closingModal = new EventEmitter();
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     console.log(this.currentProject);
@@ -25,9 +26,7 @@ export class WorkModalComponent implements OnInit {
   viewProduct() {
     window.open(this.examples[this.currentProject].product, '_blank');
   }
-
-  viewImages() {
-
+  openImage(img) {
+    window.open(img.url, '_blank');
   }
-
 }

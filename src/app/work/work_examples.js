@@ -22,7 +22,24 @@ export const data = [
     showText: false,
     overview: 'Most notable the global header and footer on Vanguard\'s home page are a product of this library.',
     product: '',
-    images: ['vui_home', 'vui_menu_small', 'vui_slider_small', 'vui_sorttable_small'],
+    images: [
+      {
+        name: 'vui_home',
+        url: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png'
+      },
+      {
+        name: 'vui_sorttable_small',
+        url: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png'
+      },
+      {
+        name: 'vui_menu_small',
+        url: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png'
+      },
+      {
+        name: 'vui_menu_small',
+        url: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png'
+      }
+   ],
     code: ''
   },
   {

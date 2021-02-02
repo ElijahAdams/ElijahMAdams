@@ -33,18 +33,48 @@
   height: 100%;
 }
 .exampleDescriptionContainer {
-  width: calc(50%);
+  flex: 1 1 0px;
+  width: 0;
   margin-left: 20px;
 }
 .examplePictureContainer{
-  width: calc(50%);
-  margin-right: 20px;
+  flex: 1 1 0px;
+  width: 0;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
 }
 
+.imageContainer {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.imageContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.imageThumbWrapper {
+  height: 300px;
+  width: 100%;
+  min-width: 100%;
+  margin: 10px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #1A1B4B;
+  scroll-snap-align: start;
+  cursor:pointer;
+}
+.imageDots {
+  display: flex;
+  justify-content: space-evenly;
+}
 p {
   font-size: 16px;
 }
@@ -80,13 +110,8 @@ p {
   color: #1A1B4B;
   border: none;
 }
-@media screen and (max-width: 768px), screen and (max-height: 790px) {
-  .modalContainer {
-    align-items: center;
-  }
-  .exampleTitle {
-    margin: 0;
-  }
+@media screen and (max-width: 768px) {
+
   .closeRow {
     width: 90%;
   }
@@ -98,13 +123,29 @@ p {
   .exampleDescriptionContainer{
     margin: 0;
     width: 100%;
-    order: 2;
+    order: 1;
   }
   .examplePictureContainer {
     width: 100%;
     margin: 0;
+    order: 2;
+  }
+
+  .viewProduct {
+    width: 100%;
     order: 1;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .modalContainer {
+    align-items: center;
+    height: 100vh;
+  }
+  .exampleTitle {
+    margin: 0;
+  }
+
   .modalButtonWrapper {
     display: flex;
     justify-content: center;
@@ -117,16 +158,5 @@ p {
     margin-top: 20px;
     width: 100%;
     order: 2;
-  }
-
-  .viewProduct {
-    width: 100%;
-    order: 1;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .modalContainer {
-    height: 100vh;
   }
 }
