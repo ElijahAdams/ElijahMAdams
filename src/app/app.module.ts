@@ -11,6 +11,8 @@ import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
 import { ScrollTrackerDirective } from './scroll-tracker/scroll-tracker.directive';
 import { WorkModalComponent } from './work-modal/work-modal.component';
+import { ImagePageComponent } from './image-page/image-page.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { WorkModalComponent } from './work-modal/work-modal.component';
     AboutComponent,
     WorkComponent,
     ScrollTrackerDirective,
-    WorkModalComponent
+    WorkModalComponent,
+    ImagePageComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

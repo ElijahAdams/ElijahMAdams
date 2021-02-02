@@ -1,0 +1,133 @@
+.homePageContainer {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+}
+.headerContainer {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+}
+.eliPic1Container {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+.homeDescriptionContainer {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  padding: 25px;
+}
+
+.pageIndicatorContainer{
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.menuItem {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 500;
+  font-size: 18px;
+  color: #BCCAD7;
+  margin: 0 30px;
+}
+.menuItem:nth-child(4) {
+  margin: 0 60px 0 30px;
+}
+.menuItem:hover {
+  color:#1A1B4B
+}
+.mobileMenuCloseContainer{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 17.5px;
+  margin-bottom: 50px;
+}
+.mobileMenuButtonWrapper {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.mobileMenuButton {
+  background: transparent;
+  border: none;
+  height: 40px;
+}
+.mobileMenuIcon {
+  height: 40px;
+  margin: 0 20px;
+}
+.mobileMenuItemContainer {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.oval {
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+  left: -20px;
+  z-index: -1;
+}
+.eliPic1 {
+  width: 100%;
+}
+
+.descriptionWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.description {
+  color:#1A1B4B
+}
+
+.helloWorld {
+  color: #97B7D5;
+}
+
+@media screen and (max-width: 768px), screen and (max-height: 750px) {
+  .homeDescriptionContainer {
+  }
+  .eliPic1Container {
+    height: 100%;
+  }
+  .pageIndicatorContainer{
+    display: none;
+  }
+  .descriptionWrapper{
+    justify-content: center;
+  }
+  .eliPic1 {
+    height: 400px;
+    width: auto;
+  }
+  .oval {
+    height: 400px;
+    width: auto;
+    bottom: 20px;
+    left: -20px;
+  }
+}
+
+@media(max-width: 768px) {
+  .homePageContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+
