@@ -1,9 +1,10 @@
-import {Directive, EventEmitter, Inject, OnDestroy, OnInit, Output} from '@angular/core';
+import {Directive, EventEmitter, Inject, Input, OnDestroy, OnInit, Output} from '@angular/core';
 
 @Directive({
   selector: '[appScrollTracker]'
 })
 export class ScrollTrackerDirective  implements OnInit, OnDestroy {
+  @Input() matchId: string;
   @Output() appScrollTracker = new EventEmitter();
   constructor() {}
 
@@ -16,7 +17,7 @@ export class ScrollTrackerDirective  implements OnInit, OnDestroy {
   }
 
   scrollEvent = async (event: any) => {
-    if (event.target.id === 'mobileCardContainer') {
+    if (event.target.id === this.matchId) {
       this.appScrollTracker.emit(event);
     }
   }

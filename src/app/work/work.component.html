@@ -34,7 +34,7 @@
           </div>
       </div>
       <div class="workExampleMobileScreen" *ngIf="isSmallScreen">
-        <div  id="mobileCardContainer" class="mobileCardContainer" (appScrollTracker)="discoverShowing($event)">
+        <div  id="mobileCardContainer" class="mobileCardContainer" (appScrollTracker)="discoverShowing($event)" [matchId]="'mobileCardContainer'">
           <div  id="mobileExampleCard{{i}}" class="exampleCard" *ngFor="let example of examples; let i = index">
             <div class="descriptionContainer">
               <p  class="cardTitle2">{{example.name}}</p>

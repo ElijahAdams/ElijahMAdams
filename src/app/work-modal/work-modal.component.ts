@@ -10,10 +10,10 @@ export class WorkModalComponent implements OnInit {
   @Input() examples;
   @Input() currentProject;
   @Output() closingModal = new EventEmitter();
+  selected = 0;
   constructor(private router: Router) { }
 
   ngOnInit() {
-    console.log(this.currentProject);
   }
 
   closeModal() {
@@ -28,5 +28,16 @@ export class WorkModalComponent implements OnInit {
   }
   openImage(img) {
     window.open(img.url, '_blank');
+  }
+
+  discoverShowing(event) {
+    const parentContainer = event.target.getBoundingClientRect();
+    for (let i = 0; i < this.examples[this.currentProject].images.length; i++) {
+      const ele: any = document.getElementById(`imageWrapper_${i}`).getBoundingClientRect();
+      if (ele.x >= (parentContainer.x - 5) && ele.x <= parentContainer.x + (parentContainer.width + 5)) {
+        this.selected = i;
+        break;
+      }
+    }
   }
 }
