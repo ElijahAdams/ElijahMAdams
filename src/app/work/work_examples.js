@@ -28,16 +28,16 @@ export const data = [
         url: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png'
       },
       {
+        name: 'vui_slider_small',
+        url: 'https://elijahmadamsresources.s3.amazonaws.com/vui_slider_small.png'
+      },
+      {
+        name: 'vui_menu_small',
+        url: 'https://elijahmadamsresources.s3.amazonaws.com/vui_menu_small.png'
+      },
+      {
         name: 'vui_sorttable_small',
-        url: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png'
-      },
-      {
-        name: 'vui_menu_small',
-        url: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png'
-      },
-      {
-        name: 'vui_menu_small',
-        url: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png'
+        url: 'https://elijahmadamsresources.s3.amazonaws.com/vui_sorttable_small.png'
       }
    ],
     code: ''
