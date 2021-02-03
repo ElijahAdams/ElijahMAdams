@@ -24,15 +24,12 @@ export class WorkModalComponent implements OnInit {
     window.open(this.examples[this.currentProject].code, '_blank');
   }
   viewProduct() {
-    window.open(this.examples[this.currentProject].product, '_blank');
+    if(this.examples[this.currentProject].product !== '') {
+      window.open(this.examples[this.currentProject].product, '_blank');
+    } else {
+      window.open(this.examples[this.currentProject].imagesUrl, '_blank');
+    }
   }
-  openImage(img) {
-    window.open(img.url, '_blank');
-  }
-  viewImages() {
-    window.open(this.examples[this.currentProject].image, '_blank');
-  }
-
   discoverShowing(event) {
     const parentContainer = event.target.getBoundingClientRect();
     for (let i = 0; i < this.examples[this.currentProject].images.length; i++) {

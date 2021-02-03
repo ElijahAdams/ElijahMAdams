@@ -1,15 +1,16 @@
 export const data = [
   {
     name: 'Retirement Readiness',
-    description: 'This tool is available to thousands of Vanguard Institutional clients. It projects a users monthly ' +
+    description: 'is a tool available to thousands of Vanguard institutional clients. It projects a users monthly ' +
       'income at retirement based on their savings at Vanguard, estimated Social Security, ' +
-      'other benefits provided by their employer to Vanguard, and additional information the user enters.',
+      'other benefits provided by their employer, and user entered information.',
     tech: 'TypeScript, Angular, Java, DB2',
     challenge: 'The challenge was this...',
     showText: false,
     overview: '',
     product: '',
-    image: '',
+    image: 'rr_1',
+    imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png',
     code: ''
   },
   {
@@ -22,7 +23,8 @@ export const data = [
     showText: false,
     overview: 'Most notable the global header and footer on Vanguard\'s home page are a product of this library.',
     product: '',
-    image: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png',
+    image: 'complib_1',
+    imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png',
     code: ''
   },
   {
@@ -34,7 +36,8 @@ export const data = [
     showText: false,
     overview: '',
     product: 'https://play.google.com/store/apps/details?id=com.funktory.fortyAcres',
-    image: '',
+    image: 'acres',
+    imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png',
     code: ''
   },
   {
@@ -45,7 +48,8 @@ export const data = [
     overview: '',
     showText: false,
     product: 'https://www.truecount21.com',
-    image: '',
+    image: 'truecount21',
+    imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png',
     code: 'https://github.com/ElijahAdams/truecount21'
   }
 ];
