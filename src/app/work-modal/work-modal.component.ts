@@ -29,6 +29,9 @@ export class WorkModalComponent implements OnInit {
   openImage(img) {
     window.open(img.url, '_blank');
   }
+  viewImages() {
+    window.open(this.examples[this.currentProject].image, '_blank');
+  }
 
   discoverShowing(event) {
     const parentContainer = event.target.getBoundingClientRect();

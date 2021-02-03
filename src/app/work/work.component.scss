@@ -29,7 +29,7 @@
   width: var(--containerWidth);
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 .myWorkTitle {
   color: #97B7D5;
@@ -149,7 +149,7 @@ app-work-modal {
   opacity: 0.98;
   height: 80%;
   width: 80%;
-  top: 5%;
+  top: 3%;
   left: 10%;
   color: white;
 }
@@ -157,8 +157,8 @@ app-work-modal {
   height: 50px;
   background-color: transparent;
   position: absolute;
-  top: 50%;
-  left: 2.5%;
+  top: 42.5%;
+  left: 3.5%;
   z-index: 10;
   border: none;
 }
@@ -166,8 +166,8 @@ app-work-modal {
   height: 50px;
   background-color: transparent;
   position: absolute;
-  top: 50%;
-  right: 2.5%;
+  top: 42.5%;
+  right: 3.5%;
   z-index: 10;
   border: none;
 }

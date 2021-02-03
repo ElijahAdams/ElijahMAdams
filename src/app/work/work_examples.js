@@ -9,7 +9,7 @@ export const data = [
     showText: false,
     overview: '',
     product: '',
-    images: [],
+    image: '',
     code: ''
   },
   {
@@ -22,24 +22,7 @@ export const data = [
     showText: false,
     overview: 'Most notable the global header and footer on Vanguard\'s home page are a product of this library.',
     product: '',
-    images: [
-      {
-        name: 'vui_home',
-        url: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png'
-      },
-      {
-        name: 'vui_slider_small',
-        url: 'https://elijahmadamsresources.s3.amazonaws.com/vui_slider_small.png'
-      },
-      {
-        name: 'vui_menu_small',
-        url: 'https://elijahmadamsresources.s3.amazonaws.com/vui_menu_small.png'
-      },
-      {
-        name: 'vui_sorttable_small',
-        url: 'https://elijahmadamsresources.s3.amazonaws.com/vui_sorttable_small.png'
-      }
-   ],
+    image: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png',
     code: ''
   },
   {
@@ -51,7 +34,7 @@ export const data = [
     showText: false,
     overview: '',
     product: 'https://play.google.com/store/apps/details?id=com.funktory.fortyAcres',
-    images: [],
+    image: '',
     code: ''
   },
   {
@@ -62,7 +45,7 @@ export const data = [
     overview: '',
     showText: false,
     product: 'https://www.truecount21.com',
-    images: [],
+    image: '',
     code: 'https://github.com/ElijahAdams/truecount21'
   }
 ];
