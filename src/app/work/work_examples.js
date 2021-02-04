@@ -17,8 +17,8 @@ export const data = [
       'percent of salary desired in retirement, spouse data, retail investment information and so much more. This tool gave ' +
       'comfort to those close to retirement and education for a game plan for those starting to save.',
     product: '',
-    image: 'rr_1',
-    imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png',
+    image: 'rr_3',
+    imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/retirement-readiness-ema.pdf',
     code: ''
   },
   {
@@ -32,8 +32,8 @@ export const data = [
       'them with different styles. The library had over 30 components that could be tested out in real time before using ' +
       'them in a front-end projects. This library saved other developers a lot of time and help with brand consistency.',
     product: '',
-    image: 'complib_1',
-    imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png',
+    image: 'complib_4',
+    imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/component-library-ema.pdf',
     code: ''
   },
   {
@@ -49,7 +49,7 @@ export const data = [
       ' There are filters for the businesses to create the best search experience for users. ' +
       'This app empowers people to help solve economic issues in the black community. ',
     product: 'https://play.google.com/store/apps/details?id=com.funktory.fortyAcres',
-    image: 'acres',
+    image: 'acres_2',
     imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png',
     code: ''
   },
@@ -63,7 +63,7 @@ export const data = [
       'for the user to toggle it on and off to practice this skill. With enough time a user can master the Hi-low system in this simulation to prepare for the real thing in casinos. ',
     showText: false,
     product: 'https://www.truecount21.com',
-    image: 'truecount21',
+    image: 'truecount21_2',
     imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png',
     code: 'https://github.com/ElijahAdams/truecount21'
   }
