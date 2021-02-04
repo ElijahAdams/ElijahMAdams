@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  overflow: scroll;
 }
 
 .modalContainer::-webkit-scrollbar {
@@ -37,6 +36,10 @@
   flex: 1 1 0px;
   width: 0;
   margin: 20px;
+  overflow: scroll;
+}
+.exampleDescriptionContainer::-webkit-scrollbar {
+  display: none;
 }
 .examplePictureContainer{
   flex: 1 1 0px;
@@ -135,6 +138,7 @@ p {
     align-items: center;
     height: 100vh;
     justify-content: normal;
+    overflow: scroll;
   }
   .exampleTitle {
     margin: 0;
@@ -171,6 +175,7 @@ p {
     margin: 20px 0 0 0;
     width: 100%;
     order: 2;
+    overflow: inherit;
   }
   .examplePictureContainer {
     width: 100%;
