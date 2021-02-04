@@ -66,7 +66,7 @@
 .cardTitle {
   color: #1A1B4B;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
 }
 .centered {
   justify-content: center;
@@ -74,7 +74,7 @@
 
 .cardTitle2 {
   font-size: 16px;
-  padding: 10px;
+  padding: 15px;
 }
 .descriptionContainer{
   position: relative;
@@ -86,7 +86,7 @@
 .cardDescription {
   font-size: 14px;
   line-height: var(--lineHeight);
-  padding: 0 10px;
+  padding: 0 15px;
   flex-shrink: 2;
   height: var(--allowableDescriptionHeight);
   overflow: hidden;
@@ -100,7 +100,7 @@
   border: none;
   color: #97B7D5;
   height: 40px;
-  margin: 0 5px 5px 0;
+  margin: 0 7.5px 7.5px 0;
 }
 .cornerTriangle {
   width: 0;

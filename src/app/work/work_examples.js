@@ -1,23 +1,15 @@
 export const data = [
   {
     name: 'Retirement Readiness',
-    description: 'is a tool available to Vanguard institutional clients. It projects a users monthly ' +
-      'income at retirement based on a few factors.',
+    description: 'A tool available to Vanguard institutional clients; It projects users\'' +
+      ' monthly income at retirement based on a few factors, such as social security, retail investments and health savings.',
     tech: 'TypeScript, Angular, Java, DB2',
-    challenge: 'This tool\'s front-end was originally coded in AngularJS and the backend was done in java that ' +
-      'was tacked on to a monolith that started in the early 2000s. With AngularJS' +
-      ' being deprecated and Microservices becoming a best practice for the company it was time to migrate this app to newer technology.',
     showText: false,
-    overview: 'I worked on this project as a senior developer and served as the subject matter expert in Angular. ' +
-      'I trained the other developers on the team as well as implemented functionality throughout the technology stack ' +
-      'and changed the delivery pipeline. This tool combined a users financial data to determine their outlook for retirement. ' +
-      'A user would log into their account and be able to see a summary chart of what they could expect in monthly income during retirement. ' +
-      'Users would also have the ability to see how the calculation was made and make tweaks to the information present ' +
-      'to see how things will fair based profile and financial changes. Users could update, retirement age, social security collection age, ' +
-      'percent of salary desired in retirement, spouse data, retail investment information and so much more. This tool gave ' +
-      'comfort to those close to retirement and education for a game plan for those starting to save.',
+    overview: 'I owned the front-end architecture for this project. The tool was originally created with AngularJs ' +
+      'and needed to migrate to Angular. I trained the other developers on the team in the new version of the ' +
+      'library.',
     product: '',
-    image: 'rr_3',
+    image: 'rr_1',
     imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/retirement-readiness-ema.pdf',
     code: ''
   },
@@ -32,7 +24,7 @@ export const data = [
       'them with different styles. The library had over 30 components that could be tested out in real time before using ' +
       'them in a front-end projects. This library saved other developers a lot of time and help with brand consistency.',
     product: '',
-    image: 'complib_4',
+    image: 'complib_1',
     imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/component-library-ema.pdf',
     code: ''
   },
@@ -49,7 +41,7 @@ export const data = [
       ' There are filters for the businesses to create the best search experience for users. ' +
       'This app empowers people to help solve economic issues in the black community. ',
     product: 'https://play.google.com/store/apps/details?id=com.funktory.fortyAcres',
-    image: 'acres_2',
+    image: 'acres',
     imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png',
     code: ''
   },
@@ -63,7 +55,7 @@ export const data = [
       'for the user to toggle it on and off to practice this skill. With enough time a user can master the Hi-low system in this simulation to prepare for the real thing in casinos. ',
     showText: false,
     product: 'https://www.truecount21.com',
-    image: 'truecount21_2',
+    image: 'truecount21',
     imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png',
     code: 'https://github.com/ElijahAdams/truecount21'
   }
