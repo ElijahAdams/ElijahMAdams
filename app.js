@@ -36,10 +36,10 @@ const sendMail = (user, callback) => {
   transporter.sendMail(mailToSelf, callback);
 
   const confirmationOptions = {
-    from: personalEmail,
+    from: '"Elijah Adams"' + personalEmail,
     to: user.email,
     subject: 'Elijah Adams Confirmation',
-    text: `Hi ${user.name}, I received your message and I'll contact you as soon as possible. Best Regards, Elijah Adams`
+    text: `Hi ${user.name},\n\nI received your message and I'll contact you as soon as possible. \n\n Best Regards,\n Elijah Adams`
   };
   transporter.sendMail(confirmationOptions, callback);
 };
