@@ -5,9 +5,15 @@ export const data = [
       ' monthly income at retirement based on a few factors, such as social security, retail investments and health savings.',
     tech: 'TypeScript, Angular, Java, DB2',
     showText: false,
-    overview: 'I owned the front-end architecture for this project. The tool was originally created with AngularJs ' +
-      'and needed to migrate to Angular. I trained the other developers on the team in the new version of the ' +
-      'library.',
+    overview: 'I owned the architecture for the front-end of this project. The tool was created with AngularJS a few years ' +
+      'before my workings with it. It is a critical offering for users giving them peace of mind on retirement so it' +
+      ' needed to migrate to Angular before AngularJS lost support. I trained the other developers on the team in the newer ' +
+      'version of the library ' +
+      'to help with the learning curve. I determined how we would handle data in the UI using RXJS subjects to reduce' +
+      ' calls to the backend. I selected the additional libraries/modules that the project would use, such as D3,' +
+      ' Angular Material, and Font Awesome to speed up the development process. I implemented code across all pages ' +
+      'of the application. Additionally, I contributed to breaking out the Java REST endpoints used for the backend ' +
+      'from a monolith into smaller microservices. ',
     product: '',
     image: 'rr_1',
     imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/retirement-readiness-ema.pdf',
@@ -15,9 +21,9 @@ export const data = [
   },
   {
     name: 'AngularJS Component Library',
-    description: 'is a library that provides reusable (ada compliant) UI components for development teams to utilize in building front-end applications.',
+    description: 'A library that provides reusable, ADA compliant UI components;  This library expedites development ' +
+      'teams\' implementation time of front-end applications.',
     tech: 'Javascript, AngularJS, Node.js, Webpack, Grunt',
-    challenge: 'This library aimed to reduce the time to market for applications across the company by providing UI components.',
     showText: false,
     overview: 'I worked on this project as a developer implementing components and updating the libraries documentation with examples. ' +
       'Users would be able to view the documentation to learn how to use the different components and customize ' +
@@ -30,16 +36,19 @@ export const data = [
   },
   {
     name: 'Acres',
-    description: 'is a mobile app that lets users find and support local black-owned businesses. ' +
-      'Currently servicing the Charlotte, North Carolina area.',
+    description: 'A mobile app that helps users find and support local black-owned businesses; ' +
+      'It\'s currently servicing the Charlotte, North Carolina area.',
     tech: 'Typescript, Ionic, Capacitor, Google Maps, Firebase',
-    challenge: 'This app looks to help solve economic inequality by providing information on black owned businesses.',
     showText: false,
-    overview: 'I lead everything for this app. Users can download this app and it will provide information on ' +
-      'black-owned businesses in a list or map view. The information provided for each business is address, hours of operations,' +
-      ' directions, reviews and more. ' +
-      ' There are filters for the businesses to create the best search experience for users. ' +
-      'This app empowers people to help solve economic issues in the black community. ',
+    overview: 'I created the entire mobile application using Javascript/Typescript. When thinking through ' +
+      'architecture and implementation I answered the tough question of go native or a hybrid app? After ' +
+      'considering the functionality it needed and the timeframe to develop it for two platforms I went the' +
+      ' hybrid route. I utilized Ionic and Capacitor to make this app a success. Knowing this would be a large' +
+      ' project I implemented unit tests on critical functionality like authorization and the main page views.' +
+      ' I developed the front-end based on the designs and conducted user research and testing to maximize user ' +
+      'satisfaction and usability. Lastly, I ensured the back end was scalable and efficient by using Firebase ' +
+      'and other Google API\'s like Maps. I launched my MVP version into the Google Playstore in January 2021. ' +
+      'Coming soon to the App Store for iOS. ',
     product: 'https://play.google.com/store/apps/details?id=com.funktory.fortyAcres',
     image: 'acres',
     imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png',
@@ -47,16 +56,20 @@ export const data = [
   },
   {
     name: 'TrueCount21',
-    description: 'is a pet project that shows users how to count cards while playing Blackjack using the classic Hi-Lo system.',
-    tech: 'Typescript, Angular, Node.js, AWS',
-    challenge: 'This website aims to teach users how to count cards to be able to take the casinos by storm when the covid pandemic ends.',
-    overview: 'I worked on this project for fun as the only developer. It has all the logic and game play of casino style Blackjack with ' +
-      'details for card counting. The website keeps track of all the necessary information to count card with the ability ' +
-      'for the user to toggle it on and off to practice this skill. With enough time a user can master the Hi-low system in this simulation to prepare for the real thing in casinos. ',
+    description: 'A pet project teaching users how to count cards using the classic Hi-Lo system and revealing logical ' +
+      'arithmetic nuances when playing Blackjack; I took one of my personal interests and made it a fun and interactive game.',
+    tech: 'AWS, Typescript, Angular, Node.js',
+    overview: 'I wanted to help others visually understand the arithmetic behind the fan-favorite game, Blackjack. ' +
+      'That desire to help soon snowballed into this application, which I\'ve spent a lot of time on "testing," ' +
+      'admittedly. Once I knocked out the operations work (domain, SSL cert, delivery pipeline, etc.) utilizing AWS, ' +
+      'I navigated the maze of if statements that is Blackjack. Once I had the logic implemented I added some light ' +
+      'animation to give it a real casino feeling. I would routinely play the app to understand the user\'s point of ' +
+      'view, and that helped me to make it simple and scalable. I want to add a blackjack basic strategy chatbot and' +
+      ' actual betting options in the future so stay tuned! ',
     showText: false,
     product: 'https://www.truecount21.com',
     image: 'truecount21',
-    imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/vui_home.png',
+    imagesUrl: '',
     code: 'https://github.com/ElijahAdams/truecount21'
   }
 ];
