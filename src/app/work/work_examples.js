@@ -25,10 +25,14 @@ export const data = [
       'teams\' implementation time of front-end applications.',
     tech: 'Javascript, AngularJS, Node.js, Webpack, Grunt',
     showText: false,
-    overview: 'I worked on this project as a developer implementing components and updating the libraries documentation with examples. ' +
-      'Users would be able to view the documentation to learn how to use the different components and customize ' +
-      'them with different styles. The library had over 30 components that could be tested out in real time before using ' +
-      'them in a front-end projects. This library saved other developers a lot of time and help with brand consistency.',
+    overview: 'I developed new and updated existing UI components with AngularJS for this library. ' +
+      'Beyond implementation, I configured tasks with Grunt and Webpack to help keep the size of this module reasonable' +
+      ' for users. This library had an 80% adoption rate for front-end applications within the company.  I consulted ' +
+      'with those users on the best practices of this library and UI development in general. The companies applications ' +
+      'supported Chrome, IE, and Firefox so I become a Browserologist (a word I made up meaning the study of browsers) ' +
+      'to ensure components always worked as intended. Through building relationships from consulting I helped ' +
+      'facilitate an internal open-source model for the library.  I was an ADA ambassador for the library and ensured ' +
+      'the majority of the 30+ components had accessibility built-in. ',
     product: '',
     image: 'complib_1',
     imagesUrl: 'https://elijahmadamsresources.s3.amazonaws.com/component-library-ema.pdf',
