@@ -10,7 +10,7 @@
         </button>
       </div>
     </div>
-    <div *ngIf="showMobileMenu && isMobile" class="mobileMenu">
+    <div *ngIf="showMobileMenu && isMobile" class="mobileMenu" [@mobileMenu]>
       <div class="mobileMenuCloseContainer">
         <button class="mobileMenuButton" (click)="toggleMobileMenu()">
           <img class="mobileMenuIcon" src="../assets/svgs/menu-close.svg">
