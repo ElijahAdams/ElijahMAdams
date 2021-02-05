@@ -12,7 +12,7 @@ import { WorkComponent } from './work/work.component';
 import { ScrollTrackerDirective } from './scroll-tracker/scroll-tracker.directive';
 import { WorkModalComponent } from './work-modal/work-modal.component';
 import { HomeComponent } from './home/home.component';
-
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +28,8 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSnackBarModule
   ],
   providers: [Window],
   bootstrap: [AppComponent]

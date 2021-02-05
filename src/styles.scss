@@ -174,7 +174,15 @@ input, textarea {
   color: #BCCAD7;
   margin: 15px 0;
 }
-
+.mat-snack-bar-container {
+  background-color: #1A1B4B;
+}
+.mat-simple-snackbar {
+  color: white;
+}
+.mat-simple-snackbar-action button {
+  color: #97B7D5;
+}
 .loadingIndicator {
   display: flex;
   justify-content: space-evenly;
