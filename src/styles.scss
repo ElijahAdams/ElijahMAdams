@@ -270,6 +270,7 @@ input, textarea {
   .page {
     height: auto;
     scroll-snap-align: none;
+    position: unset;
   }
 
   .loadingIndicator{
