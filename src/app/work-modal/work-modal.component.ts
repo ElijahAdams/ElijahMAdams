@@ -31,14 +31,4 @@ export class WorkModalComponent implements OnInit {
       window.open(this.examples[this.currentProject].imagesUrl, '_blank');
     }
   }
-  discoverShowing(event) {
-    const parentContainer = event.target.getBoundingClientRect();
-    for (let i = 0; i < this.examples[this.currentProject].images.length; i++) {
-      const ele: any = document.getElementById(`imageWrapper_${i}`).getBoundingClientRect();
-      if (ele.x >= (parentContainer.x - 5) && ele.x <= parentContainer.x + (parentContainer.width + 5)) {
-        this.selected = i;
-        break;
-      }
-    }
-  }
 }

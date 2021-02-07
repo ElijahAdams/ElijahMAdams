@@ -75,7 +75,9 @@ export class WorkComponent implements OnInit, AfterViewInit {
   openUpProjectView(i) {
     this.currentProject = i;
     this.isModalOpen = true;
-    this.canScroll.emit(false);
+    if(!this.isSmallScreen) {
+      this.canScroll.emit(false);
+    }
   }
   closeModal() {
     this.isModalOpen = false;
