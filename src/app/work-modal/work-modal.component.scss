@@ -1,8 +1,14 @@
 .modalContainer {
   height: 100%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
@@ -11,8 +17,14 @@
 }
 
 .closeRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .exampleTitle {
@@ -28,11 +40,15 @@
 }
 
 .exampleContent{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 75%;
 }
 .exampleDescriptionContainer {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0px;
   flex: 1 1 0px;
   width: 0;
   margin: 20px;
@@ -42,11 +58,20 @@
   display: none;
 }
 .examplePictureContainer{
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0px;
   flex: 1 1 0px;
   width: 0;
   margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   position: relative;
 
@@ -59,10 +84,13 @@
 
 .imageContainer {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   width: 100%;
   overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
   scroll-snap-type: x mandatory;
 }
 .imageContainer::-webkit-scrollbar {
@@ -74,24 +102,35 @@
   width: 100%;
   min-width: 100%;
   margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #1A1B4B;
   scroll-snap-align: start;
   cursor:pointer;
 }
 .imageDots {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .imageDot {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #BCCAD7;
-    margin: 15px 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #BCCAD7;
+  margin: 15px 0;
 }
 .whiteDot {
   border: 5px solid white;
@@ -111,7 +150,11 @@ p {
 }
 
 .modalButtonWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   margin: 20px 20px 20px 20px;
 }
@@ -135,9 +178,13 @@ p {
 
 @media screen and (max-width: 768px), screen and (max-height: 750px) {
   .modalContainer {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 100vh;
-    justify-content: normal;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
     overflow: scroll;
   }
   .exampleTitle {
@@ -146,8 +193,15 @@ p {
   }
 
   .modalButtonWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin: 20px 0;
     width: 90%;
@@ -156,17 +210,24 @@ p {
 
     margin-top: 20px;
     width: 100%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
   }
   .viewProduct {
     margin-left: 0;
     width: 100%;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
   }
   .closeRow {
     width: 90%;
   }
   .exampleContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 90%;
     height: auto;
@@ -174,12 +235,16 @@ p {
   .exampleDescriptionContainer{
     margin: 20px 0 0 0;
     width: 100%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
     overflow: inherit;
   }
   .examplePictureContainer {
     width: 100%;
     margin: 20px 0 0 0;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
   }
 
