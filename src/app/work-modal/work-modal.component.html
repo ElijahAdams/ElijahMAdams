@@ -18,18 +18,8 @@
         <p>{{examples[currentProject].overview}}</p>
       </div>
     </div>
-    <div *ngIf="examples[currentProject].image" class="examplePictureContainer">
+    <div *ngIf="examples[currentProject].image && !isSmallScreen" class="examplePictureContainer">
         <img src="../../assets/png/workexamples/{{examples[currentProject].image}}.png" (click)="viewProduct()">
-<!--     <div id="imageContainer" class="imageContainer" (appScrollTracker)="discoverShowing($event)" [matchId]="'imageContainer'">-->
-<!--       <div id="imageWrapper_{{i}}" class="imageThumbWrapper" *ngFor="let img of examples[currentProject].images; let i = index">-->
-<!--          <img (click)="openImage(img)" src="../../assets/png/vui/{{img.name}}.png">-->
-<!--        </div>-->
-<!--     </div>-->
-<!--      <div class="imageDots">-->
-<!--        <div *ngFor="let image of examples[currentProject].images; let i = index">-->
-<!--          <div class="imageDot" [ngClass]="{'whiteDot': i === selected}"></div>-->
-<!--        </div>-->
-<!--      </div>-->
    </div>
   </div>
   <div class="modalButtonWrapper">

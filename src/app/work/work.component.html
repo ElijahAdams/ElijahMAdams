@@ -4,6 +4,7 @@
 <app-work-modal [@modalAni]
                 *ngIf="isModalOpen" [examples]="examples"
                 [currentProject]="currentProject"
+                [isSmallScreen]="isSmallScreen"
                 (closingModal)="closeModal()"></app-work-modal>
 <button *ngIf="isModalOpen && currentProject < examples.length - 1 && !isSmallScreen" class="nextButton" (click)="nextProject()">
   <img class="arrowIcon" src="../../assets/svgs/right_arrow.svg">

@@ -9,6 +9,7 @@ import {Router} from "@angular/router";
 export class WorkModalComponent implements OnInit {
   @Input() examples;
   @Input() currentProject;
+  @Input() isSmallScreen;
   @Output() closingModal = new EventEmitter();
   selected = 0;
   constructor(private router: Router) { }
