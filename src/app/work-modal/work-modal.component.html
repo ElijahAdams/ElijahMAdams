@@ -5,6 +5,9 @@
   </div>
   <div class="exampleContent">
     <div class="exampleDescriptionContainer">
+      <div *ngIf="examples[currentProject].image && isSmallScreen" class="examplePictureContainer">
+        <img src="../../assets/png/workexamples/{{examples[currentProject].image}}.png" (click)="viewProduct()">
+      </div>
       <div class="techStackWrapper">
         <h5>Main Tech</h5>
         <p>{{examples[currentProject].tech}}</p>
