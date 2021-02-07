@@ -9,20 +9,22 @@
         <h5>Main Tech</h5>
         <p>{{examples[currentProject].tech}}</p>
       </div>
-<!--      <div class="challengeWrapper">-->
-<!--        <h5>Challenge</h5>-->
-<!--        <p>{{examples[currentProject].challenge}}</p>-->
-<!--      </div>-->
       <div class="overviewWrapper">
         <h5>Overview</h5>
         <p>{{examples[currentProject].overview}}</p>
+      </div>
+      <div *ngIf="isSmallScreen" class="modalButtonWrapper">
+        <button *ngIf="examples[currentProject].code !== ''" class="viewCodeBtn" (click)="viewCode()"> VIEW CODE</button>
+        <button *ngIf="examples[currentProject].product !== ''" class="viewProduct" (click)="viewProduct()"> VIEW PRODUCT</button>
+        <button *ngIf="examples[currentProject].imagesUrl !== '' && examples[currentProject].product === ''" class="viewProduct"
+                (click)="viewProduct()">VIEW IMAGES</button>
       </div>
     </div>
     <div *ngIf="examples[currentProject].image && !isSmallScreen" class="examplePictureContainer">
         <img src="../../assets/png/workexamples/{{examples[currentProject].image}}.png" (click)="viewProduct()">
    </div>
   </div>
-  <div class="modalButtonWrapper">
+  <div *ngIf="!isSmallScreen" class="modalButtonWrapper">
     <button *ngIf="examples[currentProject].code !== ''" class="viewCodeBtn" (click)="viewCode()"> VIEW CODE</button>
     <button *ngIf="examples[currentProject].product !== ''" class="viewProduct" (click)="viewProduct()"> VIEW PRODUCT</button>
     <button *ngIf="examples[currentProject].imagesUrl !== '' && examples[currentProject].product === ''" class="viewProduct"
